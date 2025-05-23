@@ -11,7 +11,7 @@ const Gallery = () => {
             Nzaaa Gallery
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Untold stories and spiritual awakening through visual art — a glimpse toward what humanity isn't seeing.
+            Untold stories and spiritual awakening through visual art — what is obvious but out of sight for modern man. a glimpse of wisdom of the ages.
           </p>
         </div>
 
