@@ -1,56 +1,63 @@
 
-import { Award, Film, Camera, School, User } from "lucide-react";
+import { Award, Film, Camera, School, User, Droplets, Book, Shield } from "lucide-react";
 
 const Timeline = () => {
   const timelineItems = [
     {
-      year: "2014",
-      title: "Film Scholarship Achievement",
-      description: "Won a prestigious scholarship to study film, launching my creative journey into the world of storytelling and visual arts.",
-      icon: Award,
-      color: "from-yellow-400 to-orange-500",
-    },
-    {
-      year: "2014-2016",
-      title: "Professional Filmmaker",
-      description: "Established myself as a professional filmmaker, creating compelling narratives and mastering the craft of visual storytelling.",
-      icon: Film,
+      year: "2012-2014",
+      title: "BA Film Science - Cape Peninsula University",
+      description: "Earned Bachelor of Arts in Film Science in Cape Town, South Africa. Demonstrated strong storytelling, technical proficiency, and leadership through writing, directing, and editing films and documentaries.",
+      icon: School,
       color: "from-blue-400 to-blue-600",
     },
     {
-      year: "2016",
-      title: "African Adventure",
-      description: "Embarked on an epic 9-month journey across Africa in a caravan with my 2-year-old daughter, working on social innovation projects.",
+      year: "Early 2010s",
+      title: "Water Project in Africa",
+      description: "Led water infrastructure development project across African communities, focusing on sustainable water solutions and community empowerment through innovative approaches.",
+      icon: Droplets,
+      color: "from-cyan-400 to-blue-500",
+    },
+    {
+      year: "2016-2020",
+      title: "African Adventure & Innovation",
+      description: "Embarked on an epic 9-month journey across Africa in a caravan with my 2-year-old daughter, working on social innovation projects and founding Kin-StartupLAB.",
       icon: Camera,
       color: "from-green-400 to-teal-500",
     },
     {
-      year: "2016-2017",
-      title: "Co-founder of Kin-startuplab.net",
-      description: "Co-founded an innovation company focused on social impact and technological solutions across African communities.",
+      year: "2020-Present",
+      title: "Co-Founder & Project Manager - Kin-StartupLAB",
+      description: "As CEO and Founder of Kin-StartupLAB, integrate IT and cybersecurity into entrepreneurship and innovation, ensuring data protection and cyber resilience across Berlin-Cape Town-Kinshasa operations.",
       icon: User,
       color: "from-purple-400 to-pink-500",
     },
     {
-      year: "2017-2020",
-      title: "Berlin Creative Professional",
-      description: "Moved to Germany, working as storyteller, filmmaker, videographer, and teaching basic filmmaking in Berlin's vibrant creative scene.",
-      icon: School,
-      color: "from-red-400 to-pink-500",
+      year: "2024",
+      title: "MasterSchool Cybersecurity Bootcamp",
+      description: "Completed intensive 1,440-hour cybersecurity program in Berlin. Trained in Splunk, Wireshark, threat intelligence, incident handling, and AI-driven security strategies.",
+      icon: Shield,
+      color: "from-red-400 to-orange-500",
+    },
+    {
+      year: "Nov 2024 - Jan 2025",
+      title: "Security Engineer - SENDME App",
+      description: "Integrated MFA authentication security, performed threat modeling and code reviews, enhanced fraud prevention with anomaly detection and secure transaction validation in Cape Town.",
+      icon: Shield,
+      color: "from-indigo-400 to-purple-500",
+    },
+    {
+      year: "2025-Present",
+      title: "Cybersecurity Analyst & Author",
+      description: "Currently working as Cybersecurity Analyst while completing 'Kongo Spirit Water - Journey' book, combining technical expertise with spiritual and cultural storytelling.",
+      icon: Book,
+      color: "from-teal-400 to-cyan-500",
     },
     {
       year: "2018-Present",
       title: "Nzaaa Gallery Artist",
-      description: "Developed my artistic expression through painting, creating the Nzaaa Gallery to showcase my visual artwork and creative vision.",
+      description: "Developed artistic expression through painting, creating the Nzaaa Gallery to showcase visual artwork exploring untold stories, spiritual awakening, and wisdom of the ages.",
       icon: Film,
-      color: "from-indigo-400 to-purple-500",
-    },
-    {
-      year: "2020-Present",
-      title: "Cybersecurity Analyst",
-      description: "Transitioned into cybersecurity, applying analytical skills and creative problem-solving to protect digital infrastructure and data.",
-      icon: User,
-      color: "from-gray-600 to-blue-600",
+      color: "from-yellow-400 to-orange-500",
     },
   ];
 
@@ -62,7 +69,7 @@ const Timeline = () => {
             My Professional Journey
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A decade of continuous growth, exploration, and transformation across continents and industries.
+            From Film Science graduate to Cybersecurity Analyst - a journey spanning water projects in Africa, innovation entrepreneurship, artistic expression, and technical expertise.
           </p>
         </div>
 
