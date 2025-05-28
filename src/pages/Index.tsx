@@ -1,6 +1,9 @@
 
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Timeline from "@/components/Timeline";
+import WaterProject from "@/components/WaterProject";
+import Innovation from "@/components/Innovation";
 import Book from "@/components/Book";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
@@ -11,7 +14,10 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Navigation />
       <Hero />
+      <About />
       <Timeline />
+      <WaterProject />
+      <Innovation />
       <Book />
       <Gallery />
       <Contact />
