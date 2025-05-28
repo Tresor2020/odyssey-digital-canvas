@@ -1,6 +1,7 @@
 
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
+import Book from "@/components/Book";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
@@ -11,6 +12,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <Timeline />
+      <Book />
       <Gallery />
       <Contact />
     </div>
