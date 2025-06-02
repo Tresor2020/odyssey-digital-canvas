@@ -16,36 +16,36 @@ const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Artwork pieces with more meaningful descriptions */}
+          {/* Actual artwork pieces */}
           <ArtworkCard 
-            title="Spiritual Awakening"
-            description="A journey through consciousness and spiritual enlightenment"
-            emoji="✨"
+            title="Cultural Fragments"
+            description="Exploring the scattered pieces of African identity and heritage"
+            imageSrc="/lovable-uploads/621f7902-f391-4ef7-a0a3-774413415b00.png"
           />
           <ArtworkCard 
-            title="Unseen Realities"
-            description="Revealing dimensions beyond ordinary perception"
-            emoji="👁️"
+            title="Dual Consciousness"
+            description="The meeting of traditional wisdom and modern awareness"
+            imageSrc="/lovable-uploads/00bc3de9-1550-42ff-9c08-d54123543524.png"
           />
           <ArtworkCard 
-            title="Cultural Tapestry"
-            description="Weaving together diverse human experiences across cultures"
-            emoji="🌍"
+            title="Sacred Visions"
+            description="Framed revelations of spiritual understanding"
+            imageSrc="/lovable-uploads/51b4f0d4-04b0-45b9-a505-c6d9c7775a8d.png"
           />
           <ArtworkCard 
-            title="Divine Connection"
-            description="Exploring the relationship between humanity and the sacred"
-            emoji="🕊️"
+            title="Ancestral Dialogue"
+            description="Contemporary display of timeless spiritual conversations"
+            imageSrc="/lovable-uploads/43dd6145-8282-4a18-8783-f715b678f453.png"
           />
           <ArtworkCard 
-            title="Hidden Narratives"
-            description="Stories that exist in the margins of collective consciousness"
-            emoji="📜"
+            title="Cosmic Connection"
+            description="The universe reflected in human consciousness and experience"
+            imageSrc="/lovable-uploads/2f44c218-66b3-4906-9b4c-4a9caed693f5.png"
           />
           <ArtworkCard 
-            title="Transcendent Vision"
-            description="Bridging the visible and invisible aspects of existence"
-            emoji="🌌"
+            title="Ethereal Transformation"
+            description="Spiritual metamorphosis captured in monochromatic depth"
+            imageSrc="/lovable-uploads/feaf1dcb-40a0-4a08-b401-eccbd801ed07.png"
           />
         </div>
 
@@ -63,19 +63,21 @@ const Gallery = () => {
   );
 };
 
-// Artwork card component for cleaner code organization
-const ArtworkCard = ({ title, description, emoji }: { title: string; description: string; emoji: string }) => {
+// Updated artwork card component to display actual images
+const ArtworkCard = ({ title, description, imageSrc }: { title: string; description: string; imageSrc: string }) => {
   return (
     <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-      <div className="aspect-square bg-gradient-to-br from-indigo-100 via-purple-100 to-blue-100 flex items-center justify-center p-6">
-        <div className="text-center">
-          <div className="text-6xl mb-4">{emoji}</div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-          <p className="text-gray-600 text-sm">{description}</p>
-        </div>
+      <div className="aspect-square overflow-hidden">
+        <img 
+          src={imageSrc} 
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+        />
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-        <Button variant="secondary" size="sm" className="flex items-center gap-1">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
+        <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+        <p className="text-gray-200 text-sm mb-4">{description}</p>
+        <Button variant="secondary" size="sm" className="self-start flex items-center gap-1">
           <Eye size={16} />
           View Artwork
         </Button>
