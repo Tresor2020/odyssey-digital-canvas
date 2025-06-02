@@ -1,4 +1,3 @@
-
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
@@ -12,8 +11,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            My journey has been one of reinvention and impact.
-            Rooted in electronic-communication from a young age thanks to my engineer father, I began in tech before venturing into film. After earning a BA in Film from CPUT in Cape Town through a prestigious scholarship, I produced award-winning documentaries and taught filmmaking in Berlin. Today, I channel both creative insight and analytical rigor into cybersecurity, working as an analyst and VCISO — while also expressing ancient wisdom through my paintings, decoding higher messages through visual art.
+            My journey has been one of reinvention and impact. Rooted in electronics from a young age through my engineer father, I transitioned from tech to film, earning a BA from CPUT in Cape Town and producing award-winning documentaries in Berlin. Today, I blend creative insight with analytical rigor as a cybersecurity analyst and VCISO, while expressing ancient wisdom through my paintings that decode higher messages through visual art.
           </p>
           
           <p className="text-lg text-gray-500 mb-8 font-semibold">
