@@ -12,7 +12,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            From award-winning filmmaker to African explorer, from storytelling entrepreneur to cybersecurity analyst — my journey has been one of reinvention and impact.
+            My journey has been one of reinvention and impact.
             Rooted in electronic-communication from a young age thanks to my engineer father, I began in tech before venturing into film. After earning a BA in Film from CPUT in Cape Town through a prestigious scholarship, I produced award-winning documentaries and taught filmmaking in Berlin. Today, I channel both creative insight and analytical rigor into cybersecurity, working as an analyst and VCISO — while also expressing ancient wisdom through my paintings, decoding higher messages through visual art.
           </p>
           
