@@ -11,7 +11,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Rooted in electronics from an early age—through high school studies in "Commutation," focused on automation, binary logic, and signal systems—I began in tech before transitioning to film, producing award-winning documentaries after earning a BA from CPUT. Today, I apply both creative and analytical thinking as a cybersecurity analyst and VCISO, while also exploring ancient wisdom through visual art.
+            Rooted in electronics from an early age—through high school studies in switching systems focused on automation, binary logic, and signal transmission—I began in tech before transitioning to film, producing award-winning documentaries after earning a BA from CPUT. Today, I apply both creative and analytical thinking as a cybersecurity analyst and VCISO, while also exploring ancient wisdom through visual art.
           </p>
           
           <p className="text-lg text-gray-500 mb-8 font-semibold">
