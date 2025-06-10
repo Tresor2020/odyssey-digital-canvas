@@ -1,4 +1,5 @@
 
+
 import { Shield, Code, BookOpen, Lightbulb } from "lucide-react";
 
 const About = () => {
@@ -28,15 +29,15 @@ const About = () => {
           <div className="space-y-6">
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Passionate about innovation, cybersecurity, digital technology, and visual storytelling, I bring a strong foundation in analytical thinking and problem-solving. I'm skilled in threat analysis, vulnerability assessments, and risk mitigation, with expertise in security architecture, SIEM, networking, and cloud security.
+                Passionate about innovation, cybersecurity, digital technology, and visual storytelling, I bring a strong foundation in analytical thinking and problem-solving. I specialize in threat analysis, vulnerability assessments, and risk mitigation, with expertise spanning SIEM, networking, security architecture, and cloud security.
               </p>
               
               <p className="text-gray-700 leading-relaxed text-lg">
-                As a Virtual CISO (vCISO) and Cybersecurity Consultant, I help organizations protect their data, manage risks, and ensure compliance with global standards like POPIA and GDPR. With experience in SOC analysis, SIEM, and cyber threat intelligence, I provide strategic, hands-on leadership to businesses looking for a comprehensive cybersecurity program. I'm passionate about simplifying complex security concepts and making them actionable.
+                As a Cybersecurity Analyst at Webeet.io, I support enterprise security operations and compliance initiatives—focusing on risk mitigation, cloud infrastructure reviews, and aligning security practices with GRC frameworks like GDPR and ISO 27001.
               </p>
 
               <p className="text-gray-700 leading-relaxed text-lg">
-                In addition to my cybersecurity work, I'm also an Author, Visual Storyteller, and Co-Founder of Kin-StartupLab, where I merge my creative and entrepreneurial skills to drive innovation.
+                Serving also as a vCISO and consultant, I help organizations protect data and manage cyber risk while translating complex security concepts into actionable strategies. Beyond cybersecurity, I'm an author, visual storyteller, and co-founder of Kin-StartupLab—where creativity and entrepreneurship drive tech-forward solutions.
               </p>
             </div>
 
@@ -79,3 +80,4 @@ const About = () => {
 };
 
 export default About;
+
