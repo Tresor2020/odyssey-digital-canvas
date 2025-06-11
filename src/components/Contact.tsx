@@ -49,7 +49,7 @@ const Contact = () => {
               Send Email
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/trésor-ilunga-mukuna-b69b6518/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
