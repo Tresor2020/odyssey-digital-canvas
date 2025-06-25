@@ -1,20 +1,20 @@
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, User, Clock, Droplets, Lightbulb, Shield, BookOpen, Images, Mail } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Journey", href: "#timeline" },
-    { name: "Water Project", href: "#water-project" },
-    { name: "Innovation", href: "#innovation" },
-    { name: "Cybersecurity", href: "#cybersecurity" },
-    { name: "Book", href: "#book" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#home", icon: Home },
+    { name: "About", href: "#about", icon: User },
+    { name: "Journey", href: "#timeline", icon: Clock },
+    { name: "Water Project", href: "#water-project", icon: Droplets },
+    { name: "Innovation", href: "#innovation", icon: Lightbulb },
+    { name: "Cybersecurity", href: "#cybersecurity", icon: Shield },
+    { name: "Book", href: "#book", icon: BookOpen },
+    { name: "Gallery", href: "#gallery", icon: Images },
+    { name: "Contact", href: "#contact", icon: Mail },
   ];
 
   return (
@@ -26,16 +26,20 @@ const Navigation = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </a>
-            ))}
+          <div className="hidden md:flex space-x-6">
+            {navItems.map((item) => {
+              const IconComponent = item.icon;
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-2 py-1 rounded-md hover:bg-blue-50"
+                >
+                  <IconComponent size={18} />
+                  <span className="text-sm">{item.name}</span>
+                </a>
+              );
+            })}
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -52,16 +56,20 @@ const Navigation = () => {
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const IconComponent = item.icon;
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="flex items-center gap-3 py-3 text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <IconComponent size={18} />
+                  <span>{item.name}</span>
+                </a>
+              );
+            })}
           </div>
         )}
       </div>
