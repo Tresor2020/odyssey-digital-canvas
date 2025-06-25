@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -10,6 +11,7 @@ const Navigation = () => {
     { name: "Journey", href: "#timeline" },
     { name: "Water Project", href: "#water-project" },
     { name: "Innovation", href: "#innovation" },
+    { name: "Cybersecurity", href: "#cybersecurity" },
     { name: "Book", href: "#book" },
     { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact" },
