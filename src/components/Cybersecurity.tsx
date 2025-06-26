@@ -9,16 +9,27 @@ const Cybersecurity = () => {
       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,140,0,0.1)_50%,transparent_75%)] bg-[length:60px_60px] animate-pulse"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
+        {/* Header with Hero Image */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-yellow-400 to-amber-300 bg-clip-text text-transparent">
             CYBER SECURITY
           </h2>
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-16 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded"></div>
             <Shield className="text-orange-400" size={32} />
             <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded"></div>
           </div>
+          
+          {/* Hero Image */}
+          <div className="relative mb-8 max-w-4xl mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-yellow-500/30 rounded-2xl blur-2xl"></div>
+            <img 
+              src="/lovable-uploads/d00ae959-05b4-4690-96a0-2bfe13836e47.png" 
+              alt="Cybersecurity - Ancient Wisdom Meets Modern Protection"
+              className="relative w-full h-auto rounded-2xl shadow-2xl border border-orange-500/30"
+            />
+          </div>
+          
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Protecting digital assets through advanced threat analysis, vulnerability assessments, and strategic security architecture. 
             Bridging ancient wisdom with modern cybersecurity practices.
