@@ -13,8 +13,8 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Image */}
-          <div className="flex justify-center">
+          {/* Profile Image - Now on the left */}
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative group">
               <img 
                 src="/lovable-uploads/2614a0fb-87ec-42da-955b-a4c5d85b6c30.png" 
@@ -25,8 +25,8 @@ const About = () => {
             </div>
           </div>
 
-          {/* Profile Content */}
-          <div className="space-y-6">
+          {/* Profile Content - Now on the right */}
+          <div className="space-y-6 order-1 lg:order-2">
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 leading-relaxed text-lg">
                 Passionate about innovation, cybersecurity, digital technology, and visual storytelling, I bring a strong foundation in analytical thinking and problem-solving. I specialize in threat analysis, vulnerability assessments, and risk mitigation, with expertise spanning SIEM, networking, security architecture, and cloud security.

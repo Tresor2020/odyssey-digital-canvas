@@ -2,8 +2,17 @@ import { Play, Film, Video, Camera } from "lucide-react";
 
 const Cineflix = () => {
   return (
-    <section id="cineflix" className="py-20 bg-gradient-to-br from-gray-900 to-black text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="cineflix" className="py-20 bg-gradient-to-br from-gray-900 to-black text-white relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/lovable-uploads/ea8f8e29-220c-4860-97a0-c6d837c0c48f.png"
+          alt="Cineflix Background"
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-black/80"></div>
+      </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-6">
             <Film className="w-12 h-12 text-red-500" />
