@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">tresor.mukuna@example.com</p>
+                  <p className="text-gray-600">tresor.mac@gmail.com</p>
                 </div>
               </div>
 
@@ -41,8 +41,9 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <h4 className="font-semibold text-gray-900">Phone & WhatsApp</h4>
+                  <p className="text-gray-600">Phone: +49 30 - 98434071</p>
+                  <p className="text-gray-600">WhatsApp: +49 152 04443475</p>
                 </div>
               </div>
 
@@ -51,7 +52,8 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Location</h4>
+                  <h4 className="font-semibold text-gray-900">Locations</h4>
+                  <p className="text-gray-600">Berlin-Germany, Kinshasa DRC, Cape Town SA</p>
                   <p className="text-gray-600">Available worldwide for remote collaboration</p>
                 </div>
               </div>

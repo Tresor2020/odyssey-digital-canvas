@@ -10,8 +10,11 @@ const Gallery = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Nzaaa Gallery
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             Untold stories and spiritual awakening through visual art — what is obvious but out of sight for modern man. a glimpse of wisdom of the ages.
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Digitally scanned, signed and printed artwork available for purchase. Print formats: A2, A3, A1 (other formats available upon request). Delivery +7 EUR in Europe. Payment via PayPal (tresor.mac@gmail.com) or cryptocurrency.
           </p>
         </div>
 

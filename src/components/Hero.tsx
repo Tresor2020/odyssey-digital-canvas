@@ -15,19 +15,9 @@ const Hero = () => {
           </p>
           
           <p className="text-lg text-gray-500 mb-8 font-semibold">
-            Digitally scanned, signed and printed artwork available for purchase. Print formats: A2, A3, A1 (other formats available upon request). Delivery +7 EUR in Europe. Payment via PayPal (tresor.mac@gmail.com) or cryptocurrency.
-          </p>
-          
-          <div className="mb-8">
-            <p className="text-gray-600 mb-2"><strong>Contact:</strong></p>
-            <p className="text-gray-600">Email: tresor.mac@gmail.com | Phone: +49 30 - 98434071 | WhatsApp: +49 152 04443475</p>
-            <p className="text-gray-600">Locations: Berlin-Germany, Kinshasa DRC, Cape Town SA</p>
-            <p className="text-gray-600">Available worldwide for remote collaboration</p>
-          </div>
-          
-          <p className="text-lg text-gray-500 mb-8 font-semibold">
             Exploring, creating, securing — always evolving.
           </p>
+          
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
