@@ -6,6 +6,7 @@ import WaterProject from "@/components/WaterProject";
 import Innovation from "@/components/Innovation";
 import Cybersecurity from "@/components/Cybersecurity";
 import Book from "@/components/Book";
+import Cineflix from "@/components/Cineflix";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
@@ -21,6 +22,7 @@ const Index = () => {
       <Innovation />
       <Cybersecurity />
       <Book />
+      <Cineflix />
       <Gallery />
       <Contact />
     </div>

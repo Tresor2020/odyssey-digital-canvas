@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Menu, X, Home, User, Clock, Droplets, Lightbulb, Shield, BookOpen, Images, Mail } from "lucide-react";
+import { Menu, X, Home, User, Clock, Droplets, Lightbulb, Shield, BookOpen, Images, Mail, Film } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,7 @@ const Navigation = () => {
     { name: "Innovation", href: "#innovation", icon: Lightbulb },
     { name: "Cybersecurity", href: "#cybersecurity", icon: Shield },
     { name: "Book", href: "#book", icon: BookOpen },
+    { name: "Cineflix", href: "#cineflix", icon: Film },
     { name: "Gallery", href: "#gallery", icon: Images },
     { name: "Contact", href: "#contact", icon: Mail },
   ];
