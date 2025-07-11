@@ -4,15 +4,15 @@ import { Shield, Code, BookOpen, Lightbulb } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 sm:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             About Tresor Ilunga Mukuna
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
           {/* Profile Image - Now on the left */}
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative group">
@@ -28,21 +28,21 @@ const About = () => {
           {/* Profile Content - Now on the right */}
           <div className="space-y-6 order-1 lg:order-2">
             <div className="prose prose-gray max-w-none">
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
                 Passionate about innovation, cybersecurity, digital technology, and visual storytelling, I bring a strong foundation in analytical thinking and problem-solving. I specialize in threat analysis, vulnerability assessments, and risk mitigation, with expertise spanning SIEM, networking, security architecture, and cloud security.
               </p>
               
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
                 As a Cybersecurity Analyst at Webeet.io, I support enterprise security operations and compliance initiatives—focusing on risk mitigation, cloud infrastructure reviews, and aligning security practices with GRC frameworks like GDPR and ISO 27001.
               </p>
 
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
                 Serving also as a vCISO and consultant, I help organizations protect data and manage cyber risk while translating complex security concepts into actionable strategies. Beyond cybersecurity, I'm an author, visual storyteller, and co-founder of Kin-StartupLab—where creativity and entrepreneurship drive tech-forward solutions.
               </p>
             </div>
 
             {/* Expertise Areas */}
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
               <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg">
                 <Shield className="text-blue-600" size={24} />
                 <div>

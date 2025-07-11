@@ -62,13 +62,13 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="timeline" className="py-20 bg-white">
+    <section id="timeline" className="py-12 sm:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             My Professional Journey
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
             From Film Science graduate to Cybersecurity Analyst - a journey spanning water projects in Africa, innovation entrepreneurship, artistic expression, and technical expertise.
           </p>
         </div>
@@ -80,30 +80,30 @@ const Timeline = () => {
           {timelineItems.map((item, index) => (
             <div
               key={index}
-              className={`relative flex items-center mb-12 ${
-                index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+              className={`relative flex items-center mb-6 sm:mb-12 ${
+                index % 2 === 0 ? "sm:flex-row flex-col" : "sm:flex-row-reverse flex-col"
               }`}
             >
               {/* Timeline dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-400 rounded-full z-10"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-3 sm:w-4 h-3 sm:h-4 bg-white border-2 sm:border-4 border-blue-400 rounded-full z-10"></div>
 
               {/* Content */}
               <div
-                className={`w-5/12 ${
-                  index % 2 === 0 ? "text-right pr-8" : "text-left pl-8"
-                }`}
+                className={`w-full sm:w-5/12 ${
+                  index % 2 === 0 ? "sm:text-right sm:pr-8" : "sm:text-left sm:pl-8"
+                } px-4 sm:px-0`}
               >
-                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                  <div className={`inline-flex p-3 rounded-full bg-gradient-to-r ${item.color} text-white mb-4`}>
-                    <item.icon size={24} />
+                <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                  <div className={`inline-flex p-2 sm:p-3 rounded-full bg-gradient-to-r ${item.color} text-white mb-3 sm:mb-4`}>
+                    <item.icon size={20} className="sm:w-6 sm:h-6" />
                   </div>
-                  <div className="text-sm font-semibold text-blue-600 mb-2">
+                  <div className="text-xs sm:text-sm font-semibold text-blue-600 mb-2">
                     {item.year}
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-800">
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-800">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
