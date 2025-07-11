@@ -8,9 +8,9 @@ const Cineflix = () => {
         <img 
           src="/lovable-uploads/ea8f8e29-220c-4860-97a0-c6d837c0c48f.png"
           alt="Cineflix Background"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/40 to-black/50"></div>
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
