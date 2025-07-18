@@ -1,7 +1,9 @@
 
-import { ChevronRight, Eye, ShoppingCart } from "lucide-react";
+import { ChevronRight, Eye, ShoppingCart, QrCode } from "lucide-react";
 import { Button } from "./ui/button";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { useEffect, useRef } from "react";
+import QRCode from "qrcode.js";
 
 const Gallery = () => {
   const paypalOptions = {
@@ -64,6 +66,17 @@ const Gallery = () => {
             <p className="text-gray-600 mb-6">
               Each piece invites viewers to transcend ordinary perception and glimpse the deeper currents of spiritual and cultural truths.
             </p>
+            
+            {/* QR Code Section */}
+            <div className="bg-white rounded-xl p-6 shadow-lg inline-block mb-6">
+              <div className="flex items-center gap-4 mb-4">
+                <QrCode className="text-blue-600" size={24} />
+                <h3 className="text-lg font-semibold text-gray-900">Quick Access</h3>
+              </div>
+              <p className="text-sm text-gray-600 mb-4">Scan to visit Nzaaa Gallery</p>
+              <QRCodeCanvas />
+            </div>
+            
             <Button className="px-8 py-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
               Explore Full Gallery
               <ChevronRight size={18} />
@@ -136,6 +149,27 @@ const ArtworkCard = ({ title, description, imageSrc }: { title: string; descript
       </div>
     </div>
   );
+};
+
+// QR Code Component
+const QRCodeCanvas = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    if (canvasRef.current) {
+      const galleryUrl = `${window.location.origin}#gallery`;
+      const qr = new QRCode(canvasRef.current, {
+        text: galleryUrl,
+        width: 120,
+        height: 120,
+        colorDark: "#1d4ed8",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.M,
+      });
+    }
+  }, []);
+
+  return <canvas ref={canvasRef} className="mx-auto" />;
 };
 
 export default Gallery;
