@@ -1,8 +1,7 @@
 
-import { ChevronRight, Eye, ShoppingCart, QrCode } from "lucide-react";
+import { ChevronRight, Eye, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import QRCode from "react-qr-code";
 
 const Gallery = () => {
   const paypalOptions = {
@@ -66,15 +65,6 @@ const Gallery = () => {
               Each piece invites viewers to transcend ordinary perception and glimpse the deeper currents of spiritual and cultural truths.
             </p>
             
-            {/* QR Code Section */}
-            <div className="bg-white rounded-xl p-6 shadow-lg inline-block mb-6">
-              <div className="flex items-center gap-4 mb-4">
-                <QrCode className="text-blue-600" size={24} />
-                <h3 className="text-lg font-semibold text-gray-900">Quick Access</h3>
-              </div>
-              <p className="text-sm text-gray-600 mb-4">Scan to visit Nzaaa Gallery</p>
-              <QRCodeCanvas />
-            </div>
             
             <Button className="px-8 py-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
               Explore Full Gallery
@@ -150,21 +140,5 @@ const ArtworkCard = ({ title, description, imageSrc }: { title: string; descript
   );
 };
 
-// QR Code Component
-const QRCodeCanvas = () => {
-  const galleryUrl = `${window.location.origin}#gallery`;
-
-  return (
-    <div className="p-4 bg-white rounded-lg border">
-      <QRCode 
-        value={galleryUrl} 
-        size={120}
-        fgColor="#1d4ed8"
-        bgColor="#ffffff"
-        level="M"
-      />
-    </div>
-  );
-};
 
 export default Gallery;
