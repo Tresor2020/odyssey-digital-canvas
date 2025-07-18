@@ -2,8 +2,7 @@
 import { ChevronRight, Eye, ShoppingCart, QrCode } from "lucide-react";
 import { Button } from "./ui/button";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useEffect, useRef } from "react";
-import QRCode from "qrcode.js";
+import QRCode from "react-qr-code";
 
 const Gallery = () => {
   const paypalOptions = {
@@ -153,23 +152,19 @@ const ArtworkCard = ({ title, description, imageSrc }: { title: string; descript
 
 // QR Code Component
 const QRCodeCanvas = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const galleryUrl = `${window.location.origin}#gallery`;
 
-  useEffect(() => {
-    if (canvasRef.current) {
-      const galleryUrl = `${window.location.origin}#gallery`;
-      const qr = new QRCode(canvasRef.current, {
-        text: galleryUrl,
-        width: 120,
-        height: 120,
-        colorDark: "#1d4ed8",
-        colorLight: "#ffffff",
-        correctLevel: QRCode.CorrectLevel.M,
-      });
-    }
-  }, []);
-
-  return <canvas ref={canvasRef} className="mx-auto" />;
+  return (
+    <div className="p-4 bg-white rounded-lg border">
+      <QRCode 
+        value={galleryUrl} 
+        size={120}
+        fgColor="#1d4ed8"
+        bgColor="#ffffff"
+        level="M"
+      />
+    </div>
+  );
 };
 
 export default Gallery;
