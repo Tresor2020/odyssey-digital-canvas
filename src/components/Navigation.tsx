@@ -14,7 +14,7 @@ const Navigation = () => {
     { name: "Cybersecurity", href: "#cybersecurity", icon: Shield },
     { name: "Book", href: "#book", icon: BookOpen },
     { name: "Cineflix", href: "#cineflix", icon: Film },
-    { name: "Gallery", href: "#gallery", icon: Images },
+    { name: "Nzaaa Gallery", href: "#gallery", icon: Images },
     { name: "Contact", href: "#contact", icon: Mail },
   ];
 
