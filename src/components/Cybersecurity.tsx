@@ -21,7 +21,7 @@ const Cybersecurity = () => {
           </div>
           
           {/* Hero Image */}
-          <div className="relative mb-8 max-w-4xl mx-auto">
+          <div className="relative mb-8 max-w-2xl mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-orange-500/30 to-yellow-500/30 rounded-2xl blur-2xl"></div>
             <img 
               src="/lovable-uploads/d00ae959-05b4-4690-96a0-2bfe13836e47.png" 
