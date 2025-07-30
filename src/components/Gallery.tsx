@@ -21,9 +21,18 @@ const Gallery = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
               Untold stories and spiritual awakening through visual art — what is obvious but out of sight for modern man. a glimpse of wisdom of the ages.
             </p>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
               Digitally scanned, signed and printed artwork available for purchase. A3 format: €25 (other formats available upon request). Delivery +7 EUR in Europe. Payment via PayPal (tresor.mac@gmail.com).
             </p>
+            
+            {/* Gallery Exhibition Poster */}
+            <div className="mb-12">
+              <img 
+                src="/lovable-uploads/0d77c468-b1a0-4ba6-a154-a97727062e81.png" 
+                alt="Nzaaa Gallery Exhibition Poster - Wisdom of the Ages"
+                className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl hover:shadow-3xl transition-shadow duration-300"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
