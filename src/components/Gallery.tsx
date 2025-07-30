@@ -27,37 +27,7 @@ const Gallery = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Actual artwork pieces */}
-            <ArtworkCard 
-              title="Cultural Fragments"
-              description="Exploring the scattered pieces of African identity and heritage"
-              imageSrc="/lovable-uploads/621f7902-f391-4ef7-a0a3-774413415b00.png"
-            />
-            <ArtworkCard 
-              title="Dual Consciousness"
-              description="The meeting of traditional wisdom and modern awareness"
-              imageSrc="/lovable-uploads/00bc3de9-1550-42ff-9c08-d54123543524.png"
-            />
-            <ArtworkCard 
-              title="Sacred Visions"
-              description="Framed revelations of spiritual understanding"
-              imageSrc="/lovable-uploads/51b4f0d4-04b0-45b9-a505-c6d9c7775a8d.png"
-            />
-            <ArtworkCard 
-              title="Ancestral Dialogue"
-              description="Contemporary display of timeless spiritual conversations"
-              imageSrc="/lovable-uploads/43dd6145-8282-4a18-8783-f715b678f453.png"
-            />
-            <ArtworkCard 
-              title="Cosmic Connection"
-              description="The universe reflected in human consciousness and experience"
-              imageSrc="/lovable-uploads/2f44c218-66b3-4906-9b4c-4a9caed693f5.png"
-            />
-            <ArtworkCard 
-              title="Ethereal Transformation"
-              description="Spiritual metamorphosis captured in monochromatic depth"
-              imageSrc="/lovable-uploads/feaf1dcb-40a0-4a08-b401-eccbd801ed07.png"
-            />
+            {/* Recently added artwork pieces */}
             <ArtworkCard 
               title="The Return of a Warrior - Umuja-Umuja"
               description="A powerful depiction of warrior spirit and African unity"
@@ -92,6 +62,37 @@ const Gallery = () => {
               title="Divine Lubuko"
               description="Sacred patterns and spiritual geometry in monochrome"
               imageSrc="/lovable-uploads/05e8da57-908c-40ce-89ff-4f73831bf410.png"
+            />
+            {/* Earlier artwork pieces */}
+            <ArtworkCard 
+              title="Cultural Fragments"
+              description="Exploring the scattered pieces of African identity and heritage"
+              imageSrc="/lovable-uploads/621f7902-f391-4ef7-a0a3-774413415b00.png"
+            />
+            <ArtworkCard 
+              title="Dual Consciousness"
+              description="The meeting of traditional wisdom and modern awareness"
+              imageSrc="/lovable-uploads/00bc3de9-1550-42ff-9c08-d54123543524.png"
+            />
+            <ArtworkCard 
+              title="Sacred Visions"
+              description="Framed revelations of spiritual understanding"
+              imageSrc="/lovable-uploads/51b4f0d4-04b0-45b9-a505-c6d9c7775a8d.png"
+            />
+            <ArtworkCard 
+              title="Ancestral Dialogue"
+              description="Contemporary display of timeless spiritual conversations"
+              imageSrc="/lovable-uploads/43dd6145-8282-4a18-8783-f715b678f453.png"
+            />
+            <ArtworkCard 
+              title="Cosmic Connection"
+              description="The universe reflected in human consciousness and experience"
+              imageSrc="/lovable-uploads/2f44c218-66b3-4906-9b4c-4a9caed693f5.png"
+            />
+            <ArtworkCard 
+              title="Ethereal Transformation"
+              description="Spiritual metamorphosis captured in monochromatic depth"
+              imageSrc="/lovable-uploads/feaf1dcb-40a0-4a08-b401-eccbd801ed07.png"
             />
           </div>
 
