@@ -17,7 +17,7 @@ const About = () => {
           <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative group">
               <img 
-                src="/lovable-uploads/2614a0fb-87ec-42da-955b-a4c5d85b6c30.png" 
+                src="/lovable-uploads/2d26a8ea-7db4-49ba-b8a2-c47001cc1c4c.png" 
                 alt="Tresor Ilunga Mukuna - Professional Portrait" 
                 className="w-full max-w-md rounded-xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
               />
