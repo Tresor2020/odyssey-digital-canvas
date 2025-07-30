@@ -58,6 +58,41 @@ const Gallery = () => {
               description="Spiritual metamorphosis captured in monochromatic depth"
               imageSrc="/lovable-uploads/feaf1dcb-40a0-4a08-b401-eccbd801ed07.png"
             />
+            <ArtworkCard 
+              title="The Return of a Warrior - Umuja-Umuja"
+              description="A powerful depiction of warrior spirit and African unity"
+              imageSrc="/lovable-uploads/98073be0-2894-439f-aec8-d3e98373aae5.png"
+            />
+            <ArtworkCard 
+              title="Divine Me and the Mask of Society"
+              description="Contrasting the authentic self with societal facades"
+              imageSrc="/lovable-uploads/8173c9cb-48c0-4f3e-a5b5-c8b13159c06e.png"
+            />
+            <ArtworkCard 
+              title="Celestial Awakening"
+              description="Spiritual enlightenment through cosmic consciousness"
+              imageSrc="/lovable-uploads/b2a798ab-ef0a-42cd-b875-f550d27fb361.png"
+            />
+            <ArtworkCard 
+              title="The Long and Last Kongo War 1517-2005"
+              description="Historical reflection on centuries of conflict and resistance"
+              imageSrc="/lovable-uploads/22d4bd60-8adc-408d-aed3-ebc1123bd9e5.png"
+            />
+            <ArtworkCard 
+              title="Nzaaa Mukaji (Mwa Bana)"
+              description="Cosmic motherhood and universal feminine wisdom"
+              imageSrc="/lovable-uploads/4872790c-493c-4313-b932-40ad871559ce.png"
+            />
+            <ArtworkCard 
+              title="Wisdom of the Ages"
+              description="Ancient knowledge preserved through symbolic storytelling"
+              imageSrc="/lovable-uploads/61aa55a1-9e31-4cc3-b866-4eb981ac4bcf.png"
+            />
+            <ArtworkCard 
+              title="Divine Lubuko"
+              description="Sacred patterns and spiritual geometry in monochrome"
+              imageSrc="/lovable-uploads/05e8da57-908c-40ce-89ff-4f73831bf410.png"
+            />
           </div>
 
           <div className="text-center mt-12">
