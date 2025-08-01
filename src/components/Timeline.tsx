@@ -68,7 +68,7 @@ const Timeline = () => {
       color: "from-orange-400 to-red-500",
     },
     {
-      year: "February 2016 - June 2022",
+      year: "February 2016 - Present",
       title: "Film & Video Producer - Freelancer",
       description: "Worked as freelance film and video producer across Berlin & Cape Town, creating compelling visual content and managing production workflows for diverse clients and projects.",
       icon: Film,
