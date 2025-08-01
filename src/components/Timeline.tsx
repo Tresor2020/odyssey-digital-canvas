@@ -18,11 +18,12 @@ const Timeline = () => {
       color: "from-blue-400 to-blue-600",
     },
     {
-      year: "Early 2010s",
-      title: "Water Project in Africa",
-      description: "Led water infrastructure development project across African communities, focusing on sustainable water solutions and community empowerment through innovative approaches.",
+      year: "April 2019",
+      title: "Water Project in DR Congo",
+      description: "Community water project in DR Congo - developed innovative, renewable methods to drill for crystal and potable water for underprivileged families. Provided clean water access to many families through collaborative community efforts.",
       icon: Droplets,
       color: "from-cyan-400 to-blue-500",
+      link: "https://www.goodcrowd.org/water-for-all?fbclid=IwY2xjawL4KqBleHRuA2FlbQIxMABicmlkETBqbTIxb28xNjBBcUpNQjdRAR61i_2qHFokZ6rGrw8iRAdzPaap1Sq8bIPMxtZFg0uwhuz4lu1VIWOO6x48PQ_aem_5p-iEquTNyEUZ9pucIt8Xg",
     },
     {
       year: "2016-2020",
@@ -113,6 +114,16 @@ const Timeline = () => {
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
+                  {item.link && (
+                    <a 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center mt-3 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      Learn more →
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
