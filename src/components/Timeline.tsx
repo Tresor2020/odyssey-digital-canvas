@@ -4,6 +4,13 @@ import { Award, Film, Camera, School, User, Droplets, Book, Shield } from "lucid
 const Timeline = () => {
   const timelineItems = [
     {
+      year: "Nov 2024 - Present",
+      title: "Cybersecurity Analyst - GRC / Risk & Compliance",
+      description: "Webeet.io IT Cybersecurity - Berlin. Monitor threats and anomalies using SIEM tools, support incident response, perform vulnerability assessments, and advise on remediation strategies for sophisticated digital solutions.",
+      icon: Shield,
+      color: "from-red-500 to-orange-600",
+    },
+    {
       year: "2012-2014",
       title: "BA Film Science - Cape Peninsula University",
       description: "Earned Bachelor of Arts in Film Science in Cape Town, South Africa. Demonstrated strong storytelling, technical proficiency, and leadership through writing, directing, and editing films and documentaries.",
@@ -25,9 +32,9 @@ const Timeline = () => {
       color: "from-green-400 to-teal-500",
     },
     {
-      year: "2020-Present",
-      title: "Co-Founder & Project Manager - Kin-StartupLAB",
-      description: "As CEO and Founder of Kin-StartupLAB, integrate IT and cybersecurity into entrepreneurship and innovation, ensuring data protection and cyber resilience across Berlin-Cape Town-Kinshasa operations.",
+      year: "June 2020 - January 2024",
+      title: "Project Manager & Innovation Lead - Kin-StartupLAB",
+      description: "Led 5+ cross-sector innovation projects across Berlin, Cape Town, and Kinshasa. Spearheaded digital inclusion initiatives, clean water systems for 300+ families, and developed CuckooPack (SENDME), R.Post, SmartKargo. Mentored 30+ entrepreneurs, supported ISO 27001 and GDPR compliance, contributed to cloud security reviews and policy documentation.",
       icon: User,
       color: "from-purple-400 to-pink-500",
     },
