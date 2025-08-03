@@ -30,7 +30,10 @@ const Gallery = () => {
               <img 
                 src="/lovable-uploads/0d77c468-b1a0-4ba6-a154-a97727062e81.png" 
                 alt="Nzaaa Gallery Exhibition Poster - Wisdom of the Ages"
-                className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl hover:shadow-3xl transition-shadow duration-300"
+                className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl hover:shadow-3xl transition-shadow duration-300 select-none pointer-events-none"
+                onContextMenu={(e) => e.preventDefault()}
+                onDragStart={(e) => e.preventDefault()}
+                style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none' }}
               />
             </div>
           </div>
@@ -151,13 +154,21 @@ const ArtworkCard = ({ title, description, imageSrc }: { title: string; descript
   };
 
   return (
-    <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
-      <div className="aspect-square overflow-hidden">
+    <div 
+      className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-white"
+      onContextMenu={(e) => e.preventDefault()}
+    >
+      <div className="aspect-square overflow-hidden relative">
         <img 
           src={imageSrc} 
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 select-none pointer-events-none"
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+          style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none' }}
         />
+        {/* Invisible overlay to prevent interactions */}
+        <div className="absolute inset-0 bg-transparent"></div>
       </div>
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
