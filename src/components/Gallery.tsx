@@ -56,7 +56,7 @@ const Gallery = () => {
               imageSrc="/lovable-uploads/b2a798ab-ef0a-42cd-b875-f550d27fb361.png"
             />
             <ArtworkCard 
-              title="The Long and Last Kongo War 1517-2005"
+              title="The Long and Last Kongo War 1517-2025"
               description="Historical reflection on centuries of conflict and resistance"
               imageSrc="/lovable-uploads/22d4bd60-8adc-408d-aed3-ebc1123bd9e5.png"
             />
