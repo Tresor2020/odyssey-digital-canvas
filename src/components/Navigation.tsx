@@ -5,6 +5,14 @@ import { Menu, X, Home, User, Clock, Droplets, Lightbulb, Shield, BookOpen, Imag
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleNavClick = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false);
+  };
+
   const navItems = [
     { name: "Home", href: "#home", icon: Home },
     { name: "About", href: "#about", icon: User },
@@ -31,14 +39,14 @@ const Navigation = () => {
             {navItems.map((item) => {
               const IconComponent = item.icon;
               return (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
+                  onClick={() => handleNavClick(item.href)}
                   className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-2 py-1 rounded-md hover:bg-blue-50"
                 >
                   <IconComponent size={18} />
                   <span className="text-sm">{item.name}</span>
-                </a>
+                </button>
               );
             })}
           </div>
@@ -60,15 +68,14 @@ const Navigation = () => {
             {navItems.map((item) => {
               const IconComponent = item.icon;
               return (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="flex items-center gap-3 py-3 text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => handleNavClick(item.href)}
+                  className="flex items-center gap-3 py-3 text-gray-700 hover:text-blue-600 transition-colors duration-200 w-full text-left"
                 >
                   <IconComponent size={18} />
                   <span>{item.name}</span>
-                </a>
+                </button>
               );
             })}
           </div>
