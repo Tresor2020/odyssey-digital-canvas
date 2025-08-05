@@ -28,7 +28,7 @@ const Timeline = () => {
       link: "https://www.goodcrowd.org/water-for-all?fbclid=IwY2xjawL4KqBleHRuA2FlbQIxMABicmlkETBqbTIxb28xNjBBcUpNQjdRAR61i_2qHFokZ6rGrw8iRAdzPaap1Sq8bIPMxtZFg0uwhuz4lu1VIWOO6x48PQ_aem_5p-iEquTNyEUZ9pucIt8Xg",
     },
     {
-      year: "2016-2020",
+      year: "2016-2017",
       title: "African Adventure - UBUNTU MAKASI",
       description: "In 2016, we embarked on a 9-month overland journey across Southern and East Africa, traveling in a zebra-painted Fiat Ducato camper we called Ubuntu Makasi — meaning Strength Through Humanity. Alongside our two-year-old daughter, we set out to reconnect with the soul of the continent. This was not just a road trip. It was a moving exploration of Africa's depth — from the rhythm of cities to the silence of remote villages. As a Congolese-born filmmaker and humanist, I documented the resilience, ingenuity, and unshakable spirit of the people we met along the way. We encountered young Africans transforming struggle into innovation, elders safeguarding ancestral wisdom, and communities thriving through collective strength. Ubuntu Makasi became more than our vehicle — it became a vessel for witnessing and sharing the beauty, complexity, and power of African humanity.",
       icon: Camera,
