@@ -71,13 +71,6 @@ const WaterProject = () => {
                 <div className="flex gap-2">
                   <div className="relative group">
                     <img 
-                      src="/lovable-uploads/57a21665-c0b2-4768-82ba-45fd708f4211.png" 
-                      alt="Water analysis" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="relative group">
-                    <img 
                       src="/lovable-uploads/28869b21-6e40-474b-b45a-9c075a0e516e.png" 
                       alt="Distribution system" 
                       className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
