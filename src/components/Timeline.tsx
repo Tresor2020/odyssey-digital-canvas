@@ -9,6 +9,7 @@ const Timeline = () => {
       description: "Webeet.io IT Cybersecurity - Berlin. Monitor threats and anomalies using SIEM tools, support incident response, perform vulnerability assessments, and advise on remediation strategies for sophisticated digital solutions.",
       icon: Shield,
       color: "from-red-500 to-orange-600",
+      image: "/lovable-uploads/68ae38dd-ceea-4eb8-9e30-bfa9cbf6d060.png",
     },
     {
       year: "2012-2014",
