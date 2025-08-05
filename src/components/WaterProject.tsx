@@ -44,13 +44,6 @@ const WaterProject = () => {
                       className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/8211f785-3276-4e57-b0af-c5f51d52ce6f" 
-                      alt="Water quality testing" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
                 </div>
                 <div className="flex gap-2">
                   <div className="relative group">
