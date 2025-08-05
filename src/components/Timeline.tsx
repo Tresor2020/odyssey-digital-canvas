@@ -1,5 +1,6 @@
 
 import { Award, Film, Camera, School, User, Droplets, Book, Shield, Instagram } from "lucide-react";
+import africanAdventureIcon from "@/assets/african-adventure-icon.png";
 
 const Timeline = () => {
   const timelineItems = [
@@ -125,10 +126,16 @@ const Timeline = () => {
                   index % 2 === 0 ? "sm:text-right sm:pr-8" : "sm:text-left sm:pl-8"
                 } px-4 sm:px-0`}
               >
-                <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                  <div className={`inline-flex p-2 sm:p-3 rounded-full bg-gradient-to-r ${item.color} text-white mb-3 sm:mb-4`}>
-                    <item.icon size={20} className="sm:w-6 sm:h-6" />
-                  </div>
+                 <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                   {item.title === "African Adventure - UBUNTU MAKASI" ? (
+                     <div className={`inline-flex p-2 sm:p-3 rounded-full bg-gradient-to-r ${item.color} text-white mb-3 sm:mb-4`}>
+                       <img src={africanAdventureIcon} alt="African Adventure" className="w-5 h-5 sm:w-6 sm:h-6" />
+                     </div>
+                   ) : (
+                     <div className={`inline-flex p-2 sm:p-3 rounded-full bg-gradient-to-r ${item.color} text-white mb-3 sm:mb-4`}>
+                       <item.icon size={20} className="sm:w-6 sm:h-6" />
+                     </div>
+                   )}
                   <div className="text-xs sm:text-sm font-semibold text-blue-600 mb-2">
                     {item.year}
                   </div>
