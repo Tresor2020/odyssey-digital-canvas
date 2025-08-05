@@ -136,11 +136,11 @@ const Timeline = () => {
                       <img 
                         src={item.image} 
                         alt={item.title}
-                        className="h-16 w-16 object-cover rounded-full cursor-pointer transition-transform duration-300 hover:scale-150 active:scale-200 shadow-lg hover:shadow-xl"
+                        className="h-16 w-16 object-cover rounded-full cursor-pointer transition-transform duration-300 hover:scale-[5] active:scale-[5] shadow-lg hover:shadow-xl z-10 relative"
                         onClick={(e) => {
-                          e.currentTarget.classList.toggle('scale-200');
+                          e.currentTarget.classList.toggle('scale-[5]');
                           setTimeout(() => {
-                            e.currentTarget.classList.remove('scale-200');
+                            e.currentTarget.classList.remove('scale-[5]');
                           }, 2000);
                         }}
                       />
