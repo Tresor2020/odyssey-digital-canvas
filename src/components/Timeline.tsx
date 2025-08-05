@@ -80,6 +80,7 @@ const Timeline = () => {
       description: "Worked as freelance film and video producer across Berlin & Cape Town, creating compelling visual content and managing production workflows for diverse clients and projects.",
       icon: Film,
       color: "from-purple-400 to-indigo-500",
+      image: "/lovable-uploads/777a3e81-d2ce-484c-87b7-0f2f5d6fbc68.png",
     },
     {
       year: "2018-Present",
