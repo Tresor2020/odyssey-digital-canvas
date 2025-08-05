@@ -30,7 +30,7 @@ const Timeline = () => {
     {
       year: "2016-2020",
       title: "African Adventure - UBUNTU MAKASI",
-      description: "Embarked on an epic 9-month journey across Africa in a caravan with my 2-year-old daughter, working on social innovation projects and founding Kin-StartupLAB.",
+      description: "In 2016, we embarked on a 9-month overland journey across Southern and East Africa, traveling in a zebra-painted Fiat Ducato camper we called Ubuntu Makasi — meaning Strength Through Humanity. Alongside our two-year-old daughter, we set out to reconnect with the soul of the continent. This was not just a road trip. It was a moving exploration of Africa's depth — from the rhythm of cities to the silence of remote villages. As a Congolese-born filmmaker and humanist, I documented the resilience, ingenuity, and unshakable spirit of the people we met along the way. We encountered young Africans transforming struggle into innovation, elders safeguarding ancestral wisdom, and communities thriving through collective strength. Ubuntu Makasi became more than our vehicle — it became a vessel for witnessing and sharing the beauty, complexity, and power of African humanity.",
       icon: Camera,
       color: "from-green-400 to-teal-500",
       image: "/lovable-uploads/african-adventure-heavy-blur.png",
