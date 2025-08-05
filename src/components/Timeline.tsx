@@ -1,5 +1,5 @@
 
-import { Award, Film, Camera, School, User, Droplets, Book, Shield } from "lucide-react";
+import { Award, Film, Camera, School, User, Droplets, Book, Shield, Instagram } from "lucide-react";
 
 const Timeline = () => {
   const timelineItems = [
@@ -34,6 +34,8 @@ const Timeline = () => {
       icon: Camera,
       color: "from-green-400 to-teal-500",
       image: "/lovable-uploads/african-adventure-heavy-blur.png",
+      link: "https://africanperspectivesblog.wordpress.com/2015/12/02/ubuntu-makasi/",
+      instagram: "https://www.instagram.com/ubuntumakasi/",
     },
     {
       year: "June 2020 - January 2024",
@@ -159,6 +161,17 @@ const Timeline = () => {
                       className="inline-flex items-center mt-3 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
                     >
                       Learn more →
+                    </a>
+                  )}
+                  {item.instagram && (
+                    <a 
+                      href={item.instagram} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center mt-3 ml-4 text-pink-600 hover:text-pink-800 transition-colors"
+                    >
+                      <Instagram size={20} className="mr-1" />
+                      <span className="text-sm font-medium">Instagram</span>
                     </a>
                   )}
                 </div>
