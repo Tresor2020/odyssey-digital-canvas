@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X, Home, User, Clock, Droplets, Lightbulb, Shield, BookOpen, Images, Mail, Film } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import TranslatedText from './TranslatedText';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,16 +18,16 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { name: t('navigation.home'), href: "#home", icon: Home },
-    { name: t('navigation.about'), href: "#about", icon: User },
-    { name: t('navigation.journey'), href: "#timeline", icon: Clock },
-    { name: t('navigation.waterProject'), href: "#water-project", icon: Droplets },
-    { name: t('navigation.innovation'), href: "#innovation", icon: Lightbulb },
-    { name: t('navigation.cybersecurity'), href: "#cybersecurity", icon: Shield },
-    { name: t('navigation.book'), href: "#book", icon: BookOpen },
-    { name: t('navigation.cineflix'), href: "#cineflix", icon: Film },
-    { name: t('navigation.gallery'), href: "#gallery", icon: Images },
-    { name: t('navigation.contact'), href: "#contact", icon: Mail },
+    { name: "Home", href: "#home", icon: Home },
+    { name: "About", href: "#about", icon: User },
+    { name: "Journey", href: "#timeline", icon: Clock },
+    { name: "Water Project", href: "#water-project", icon: Droplets },
+    { name: "Innovation", href: "#innovation", icon: Lightbulb },
+    { name: "Cybersecurity", href: "#cybersecurity", icon: Shield },
+    { name: "Book", href: "#book", icon: BookOpen },
+    { name: "Cineflix", href: "#cineflix", icon: Film },
+    { name: "Nzaaa Gallery", href: "#gallery", icon: Images },
+    { name: "Contact", href: "#contact", icon: Mail },
   ];
 
   return (
@@ -49,7 +50,7 @@ const Navigation = () => {
                   className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-2 py-1 rounded-md hover:bg-blue-50"
                 >
                   <IconComponent size={18} />
-                  <span className="text-sm">{item.name}</span>
+                  <TranslatedText className="text-sm">{item.name}</TranslatedText>
                 </button>
               );
             })}
@@ -80,7 +81,7 @@ const Navigation = () => {
                   className="flex items-center gap-3 py-3 text-gray-700 hover:text-blue-600 transition-colors duration-200 w-full text-left"
                 >
                   <IconComponent size={18} />
-                  <span>{item.name}</span>
+                  <TranslatedText>{item.name}</TranslatedText>
                 </button>
               );
             })}

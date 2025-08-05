@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, Globe } from 'lucide-react';
+import { ChevronDown, Globe, Loader } from 'lucide-react';
+import useAITranslation from '@/hooks/useAITranslation';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const { isTranslating } = useAITranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
@@ -25,7 +27,7 @@ const LanguageSwitcher = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 rounded-md hover:bg-blue-50"
       >
-        <Globe size={18} />
+        {isTranslating ? <Loader size={18} className="animate-spin" /> : <Globe size={18} />}
         <span className="hidden sm:inline text-sm font-medium">{currentLanguage.name}</span>
         <span className="sm:hidden">{currentLanguage.flag}</span>
         <ChevronDown size={16} className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
