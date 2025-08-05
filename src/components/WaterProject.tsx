@@ -22,7 +22,7 @@ const WaterProject = () => {
                 <img 
                   src="/lovable-uploads/606ae225-2d1a-48b8-bfb3-32cae82446d6.png" 
                   alt="Community member celebrating access to clean water in Africa" 
-                  className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                  className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -30,7 +30,7 @@ const WaterProject = () => {
                 <img 
                   src="/lovable-uploads/1206d388-9011-4975-a21a-e29e4465c9b1.png" 
                   alt="Joy and celebration as clean water flows from the well" 
-                  className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                  className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -39,7 +39,7 @@ const WaterProject = () => {
               <img 
                 src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
                 alt="Showing the precious water from the community well project" 
-                className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
