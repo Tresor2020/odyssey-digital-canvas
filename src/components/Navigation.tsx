@@ -1,11 +1,8 @@
 
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Menu, X, Home, User, Clock, Droplets, Lightbulb, Shield, BookOpen, Images, Mail, Film } from "lucide-react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navigation = () => {
-  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = (href: string) => {
@@ -17,16 +14,16 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { name: t("navigation.home"), href: "#home", icon: Home },
-    { name: t("navigation.about"), href: "#about", icon: User },
-    { name: t("navigation.journey"), href: "#timeline", icon: Clock },
-    { name: t("navigation.waterProject"), href: "#water-project", icon: Droplets },
-    { name: t("navigation.innovation"), href: "#innovation", icon: Lightbulb },
-    { name: t("navigation.cybersecurity"), href: "#cybersecurity", icon: Shield },
-    { name: t("navigation.book"), href: "#book", icon: BookOpen },
-    { name: t("navigation.cineflix"), href: "#cineflix", icon: Film },
-    { name: t("navigation.gallery"), href: "#gallery", icon: Images },
-    { name: t("navigation.contact"), href: "#contact", icon: Mail },
+    { name: "Home", href: "#home", icon: Home },
+    { name: "About", href: "#about", icon: User },
+    { name: "Journey", href: "#timeline", icon: Clock },
+    { name: "Water Project", href: "#water-project", icon: Droplets },
+    { name: "Innovation", href: "#innovation", icon: Lightbulb },
+    { name: "Cybersecurity", href: "#cybersecurity", icon: Shield },
+    { name: "Book", href: "#book", icon: BookOpen },
+    { name: "Cineflix", href: "#cineflix", icon: Film },
+    { name: "Nzaaa Gallery", href: "#gallery", icon: Images },
+    { name: "Contact", href: "#contact", icon: Mail },
   ];
 
   return (
@@ -52,7 +49,6 @@ const Navigation = () => {
                 </button>
               );
             })}
-            <LanguageSwitcher />
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -82,9 +78,6 @@ const Navigation = () => {
                 </button>
               );
             })}
-            <div className="mt-4 pt-4 border-t border-gray-200">
-              <LanguageSwitcher />
-            </div>
           </div>
         )}
       </div>
