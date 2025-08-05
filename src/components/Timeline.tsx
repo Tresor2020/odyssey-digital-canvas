@@ -38,6 +38,7 @@ const Timeline = () => {
       description: "Led 5+ cross-sector innovation projects across Berlin, Cape Town, and Kinshasa. Spearheaded digital inclusion initiatives, clean water systems for 300+ families, and developed CuckooPack (SENDME), R.Post, SmartKargo. Mentored 30+ entrepreneurs, supported ISO 27001 and GDPR compliance, contributed to cloud security reviews and policy documentation.",
       icon: User,
       color: "from-purple-400 to-pink-500",
+      image: "/lovable-uploads/713d6420-0274-47da-97cf-b80244f282e0.png",
     },
     {
       year: "2024",
@@ -128,6 +129,15 @@ const Timeline = () => {
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {item.description}
                   </p>
+                  {item.image && (
+                    <div className="mt-4 flex justify-center">
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="h-16 w-auto object-contain"
+                      />
+                    </div>
+                  )}
                   {item.link && (
                     <a 
                       href={item.link} 
