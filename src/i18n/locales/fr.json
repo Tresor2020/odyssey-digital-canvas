@@ -1,0 +1,263 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "journey": "Parcours",
+    "waterProject": "Projet Eau",
+    "innovation": "Innovation",
+    "cybersecurity": "Cybersécurité",
+    "book": "Livre",
+    "cineflix": "Cineflix",
+    "gallery": "Galerie Nzaaa",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Tresor ILunga Mukuna",
+    "subtitle": "Explorateur, Innovateur, Auteur et Leader Technologique",
+    "description": "Connecter l'innovation africaine aux solutions technologiques mondiales à travers l'exploration, la narration et une expertise de pointe en cybersécurité.",
+    "contactButton": "Prendre Contact",
+    "learnMoreButton": "En Savoir Plus"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "paragraph1": "Je suis Tresor ILunga Mukuna, un explorateur passionné, innovateur et leader technologique avec un engagement profond à connecter l'innovation africaine aux solutions mondiales. Mon parcours s'étend des anciens royaumes du Kongo aux paysages modernes de la cybersécurité.",
+    "paragraph2": "En tant qu'auteur, j'ai documenté la riche histoire des civilisations africaines, en particulier l'héritage durable du Royaume du Kongo. À travers mes projets d'exploration à travers l'Afrique, j'ai été témoin de première main du potentiel incroyable du continent pour l'innovation et l'avancement technologique.",
+    "paragraph3": "Mon travail en cybersécurité et technologie se concentre sur la création de solutions sécurisées et accessibles qui peuvent bénéficier aux communautés à travers l'Afrique et au-delà. Je crois au pouvoir de la narration, de l'exploration et de la technologie pour créer un changement positif dans le monde.",
+    "expertise": {
+      "title": "Domaines d'Expertise",
+      "cybersecurity": {
+        "title": "Cybersécurité",
+        "description": "Solutions de sécurité avancées et évaluation des menaces"
+      },
+      "technology": {
+        "title": "Technologie",
+        "description": "Solutions technologiques innovantes pour les marchés africains"
+      },
+      "author": {
+        "title": "Auteur",
+        "description": "Documentation historique et narration"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Connecter les connaissances traditionnelles à la technologie moderne"
+      }
+    }
+  },
+  "timeline": {
+    "title": "Mon Parcours",
+    "subtitle": "Des Royaumes Anciens à l'Innovation Moderne",
+    "events": {
+      "2015": {
+        "title": "Formation Académique",
+        "description": "Commencé l'étude de l'histoire africaine et de la technologie à l'université, en me concentrant sur l'intersection des connaissances traditionnelles et de l'innovation moderne."
+      },
+      "2017": {
+        "title": "Première Exploration",
+        "description": "Lancé mon premier grand projet d'exploration à travers l'Afrique centrale, documentant les pratiques traditionnelles et leur pertinence pour les défis modernes."
+      },
+      "2019": {
+        "title": "Carrière en Cybersécurité",
+        "description": "Commencé à travailler en cybersécurité, développant des solutions de sécurité adaptées aux entreprises et institutions africaines."
+      },
+      "2021": {
+        "title": "Initiative Projet Eau",
+        "description": "Initié le projet d'accès à l'eau potable dans les communautés rurales, combinant la gestion traditionnelle de l'eau avec la technologie moderne de purification."
+      },
+      "2023": {
+        "title": "Auteur Publié",
+        "description": "Publié 'La Longue et Dernière Guerre du Kongo 1517-2025', documentant les luttes historiques et contemporaines du peuple Kongo."
+      },
+      "2024": {
+        "title": "Plateforme d'Innovation",
+        "description": "Lancé une plateforme connectant les innovateurs africains aux marchés mondiaux, favorisant l'avancement technologique à travers le continent."
+      }
+    }
+  },
+  "waterProject": {
+    "title": "Initiative Eau Potable",
+    "subtitle": "Apporter l'Espoir par l'Innovation",
+    "description": "Notre projet d'eau potable combine les techniques traditionnelles africaines de gestion de l'eau avec la technologie moderne de purification pour fournir un accès durable à l'eau potable dans les communautés rurales d'Afrique centrale.",
+    "details": {
+      "title": "Impact du Projet",
+      "paragraph1": "Cette initiative représente plus qu'un simple accès à l'eau potable—il s'agit de préserver la dignité, permettre l'éducation et favoriser le développement communautaire. En travaillant étroitement avec les dirigeants locaux et en incorporant les connaissances traditionnelles, nous avons créé des solutions à la fois efficaces et culturellement appropriées.",
+      "paragraph2": "Le projet a mis en œuvre avec succès des systèmes de purification d'eau dans plus de 15 communautés, bénéficiant directement à des milliers de familles et soutenant le développement économique local grâce à l'amélioration des résultats de santé et à l'augmentation de la productivité."
+    },
+    "impact": {
+      "communities": {
+        "number": "15+",
+        "label": "Communautés Servies"
+      },
+      "people": {
+        "number": "5000+",
+        "label": "Vies Impactées"
+      },
+      "sustainability": {
+        "number": "100%",
+        "label": "Solutions Durables"
+      }
+    }
+  },
+  "innovation": {
+    "title": "Innovation et Aventure Africaines",
+    "subtitle": "Découvrir les Solutions de Demain Aujourd'hui",
+    "description": "Rejoignez-moi dans un voyage extraordinaire à travers l'Afrique, où la sagesse ancienne rencontre la technologie de pointe. Des marchés animés de Kinshasa aux villages reculés du bassin du Congo, nous découvrons des innovations qui pourraient changer le monde.",
+    "content": {
+      "title": "Un Voyage de Découverte",
+      "paragraph1": "L'Afrique est un continent d'innovation incroyable, où la nécessité stimule la créativité et les connaissances traditionnelles fournissent la base pour des solutions révolutionnaires. Mes explorations m'ont mené dans des endroits où les entrepreneurs résolvent les défis mondiaux avec des innovations inspirées localement.",
+      "paragraph2": "Des systèmes d'irrigation alimentés à l'énergie solaire développés par les agriculteurs aux services financiers basés sur la blockchain créés par de jeunes technologues, l'Afrique écrit l'avenir de l'innovation mondiale. Ces histoires doivent être racontées, et ces innovations doivent atteindre la scène mondiale."
+    },
+    "areas": {
+      "exploration": {
+        "title": "Exploration",
+        "description": "Découvrir les innovations cachées à travers le continent"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Connecter la sagesse traditionnelle à la technologie moderne"
+      },
+      "impact": {
+        "title": "Impact",
+        "description": "Créer des solutions durables pour les défis mondiaux"
+      }
+    }
+  },
+  "cybersecurity": {
+    "title": "Excellence en Cybersécurité",
+    "subtitle": "Protéger l'Avenir Numérique de l'Afrique",
+    "description": "Alors que l'économie numérique de l'Afrique croît rapidement, la cybersécurité devient cruciale pour le développement durable. Je me spécialise dans la création de cadres de sécurité robustes qui protègent à la fois les entreprises traditionnelles et les startups innovantes à travers le continent.",
+    "services": {
+      "title": "Services de Sécurité",
+      "threatAssessment": {
+        "title": "Évaluation des Menaces",
+        "description": "Analyse complète des vulnérabilités de sécurité et des facteurs de risque spécifiques aux environnements d'affaires africains."
+      },
+      "securityFramework": {
+        "title": "Cadre de Sécurité",
+        "description": "Développement de protocoles de sécurité adaptés qui équilibrent la protection avec l'accessibilité pour les entreprises en croissance."
+      },
+      "incidentResponse": {
+        "title": "Réponse aux Incidents",
+        "description": "Solutions de réponse rapide et de récupération conçues pour les défis uniques de l'infrastructure africaine."
+      },
+      "training": {
+        "title": "Formation et Éducation",
+        "description": "Programmes de renforcement des capacités pour développer l'expertise et la sensibilisation locales en cybersécurité."
+      }
+    },
+    "expertise": {
+      "title": "Domaines d'Expertise",
+      "networkSecurity": "Sécurité Réseau",
+      "dataProtection": "Protection des Données",
+      "incidentManagement": "Gestion des Incidents",
+      "compliance": "Conformité et Gouvernance"
+    }
+  },
+  "book": {
+    "title": "Publication Récente",
+    "bookTitle": "La Longue et Dernière Guerre du Kongo",
+    "bookSubtitle": "1517-2025",
+    "author": "par Tresor ILunga Mukuna",
+    "description": "Un récit historique complet de la lutte durable du Royaume du Kongo pour l'indépendance et la préservation culturelle. Ce livre retrace la résistance continue de l'invasion portugaise de 1517 aux défis contemporains auxquels fait face le peuple Kongo en 2025.",
+    "spiritualDimension": {
+      "title": "DIMENSION SPIRITUELLE DE L'EAU",
+      "quote": "L'eau n'est pas seulement une ressource—c'est le fondement spirituel de la vie, nous connectant à nos ancêtres et nous guidant vers un avenir durable."
+    },
+    "details": {
+      "pages": "450 pages d'histoire méticuleusement recherchée",
+      "research": "Basé sur les traditions orales, les documents historiques et les entretiens contemporains",
+      "impact": "Lecture essentielle pour comprendre l'histoire de l'Afrique centrale et la politique contemporaine"
+    },
+    "pricing": {
+      "price": "29,99 $",
+      "shipping": "Livraison gratuite dans le monde entier",
+      "availability": "Disponible en couverture rigide et formats numériques"
+    },
+    "buttons": {
+      "purchase": "Acheter le Livre",
+      "learnMore": "En Savoir Plus"
+    }
+  },
+  "cineflix": {
+    "title": "Collection Cineflix",
+    "subtitle": "Narration Visuelle et Documentation Culturelle",
+    "description": "À travers l'objectif du cinéma, je capture l'essence de l'innovation, de la culture et de la transformation africaines. Ma collection de films présente des histoires inédites de résilience, de créativité et de progrès à travers le continent.",
+    "categories": {
+      "documentaries": {
+        "title": "Documentaires",
+        "description": "Explorations approfondies de l'innovation africaine et du patrimoine culturel"
+      },
+      "shortFilms": {
+        "title": "Courts Métrages",
+        "description": "Capturer des moments d'inspiration et de connexion humaine"
+      },
+      "cinematicExperiments": {
+        "title": "Expériences Cinématographiques",
+        "description": "Interprétations artistiques d'histoires traditionnelles et de réalités modernes"
+      }
+    },
+    "cta": {
+      "title": "Explorer la Collection",
+      "description": "Découvrez des histoires puissantes d'innovation et de résilience africaines à travers notre collection de films organisée.",
+      "button": "Visiter Cineflix"
+    }
+  },
+  "gallery": {
+    "title": "Galerie Nzaaa",
+    "subtitle": "Expressions Artistiques et Patrimoine Culturel",
+    "description": "Une collection organisée d'art visuel qui célèbre le patrimoine africain, l'innovation contemporaine et le pont entre les expressions traditionnelles et modernes.",
+    "categories": {
+      "historical": "Artefacts Historiques",
+      "contemporary": "Art Contemporain",
+      "innovation": "Projets d'Innovation",
+      "exploration": "Photographie d'Exploration"
+    },
+    "artworks": {
+      "kongoWar": {
+        "title": "La Longue et Dernière Guerre du Kongo 1517-2025",
+        "description": "Une représentation artistique puissante de la lutte continue pour la préservation culturelle et l'indépendance."
+      },
+      "waterLife": {
+        "title": "L'Eau c'est la Vie",
+        "description": "Documentation visuelle de nos initiatives d'eau potable et de leur impact sur les communautés rurales."
+      },
+      "innovation": {
+        "title": "Paysage d'Innovation",
+        "description": "Capturer l'esprit d'innovation africaine à travers des expressions abstraites et contemporaines."
+      },
+      "heritage": {
+        "title": "Patrimoine Culturel",
+        "description": "Préserver et célébrer les riches traditions culturelles de l'Afrique centrale."
+      },
+      "exploration": {
+        "title": "Chroniques d'Exploration",
+        "description": "Journal visuel d'expéditions à travers l'Afrique, présentant des joyaux cachés et des histoires inédites."
+      },
+      "future": {
+        "title": "Visions d'Avenir",
+        "description": "Interprétations artistiques de l'avenir technologique et culturel de l'Afrique."
+      }
+    }
+  },
+  "contact": {
+    "title": "Prendre Contact",
+    "subtitle": "Collaborons sur Quelque Chose d'Extraordinaire",
+    "description": "Que vous soyez intéressé par une collaboration, des conférences, ou en apprendre plus sur mon travail, j'aimerais avoir de vos nouvelles.",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "send": "Envoyer le Message"
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "email": "tresor@example.com",
+      "phone": "+243 123 456 789",
+      "location": "Kinshasa, République Démocratique du Congo"
+    },
+    "social": {
+      "title": "Suivez Mon Parcours",
+      "description": "Restez informé de mes dernières explorations, publications et innovations."
+    }
+  }
+}

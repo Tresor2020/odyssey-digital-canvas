@@ -1,14 +1,15 @@
 
-
 import { Shield, Code, BookOpen, Lightbulb } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="py-12 sm:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            About Tresor Ilunga Mukuna
+            {t("about.title")}
           </h2>
         </div>
 
@@ -29,46 +30,49 @@ const About = () => {
           <div className="space-y-6 order-1 lg:order-2">
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
-                Passionate about innovation, cybersecurity, digital technology, and visual storytelling, I bring a strong foundation in analytical thinking and problem-solving. I specialize in threat analysis, vulnerability assessments, and risk mitigation, with expertise spanning SIEM, networking, security architecture, and cloud security.
+                {t("about.paragraph1")}
               </p>
               
               <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
-                As a Cybersecurity Analyst at Webeet.io, I support enterprise security operations and compliance initiatives—focusing on risk mitigation, cloud infrastructure reviews, and aligning security practices with GRC frameworks like GDPR and ISO 27001.
+                {t("about.paragraph2")}
               </p>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
-                Serving also as a vCISO and consultant, I help organizations protect data and manage cyber risk while translating complex security concepts into actionable strategies. Beyond cybersecurity, I'm an author, visual storyteller, and co-founder of Kin-StartupLab—where creativity and entrepreneurship drive tech-forward solutions.
+                {t("about.paragraph3")}
               </p>
             </div>
 
             {/* Expertise Areas */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
-              <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg">
-                <Shield className="text-blue-600" size={24} />
-                <div>
-                  <h4 className="font-semibold text-gray-800">Cybersecurity</h4>
-                  <p className="text-sm text-gray-600">vCISO & Consultant</p>
+            <div className="mt-6 sm:mt-8">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">{t("about.expertise.title")}</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg">
+                  <Shield className="text-blue-600" size={24} />
+                  <div>
+                    <h4 className="font-semibold text-gray-800">{t("about.expertise.cybersecurity.title")}</h4>
+                    <p className="text-sm text-gray-600">{t("about.expertise.cybersecurity.description")}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 p-4 bg-purple-50 rounded-lg">
-                <Code className="text-purple-600" size={24} />
-                <div>
-                  <h4 className="font-semibold text-gray-800">Technology</h4>
-                  <p className="text-sm text-gray-600">Digital Innovation</p>
+                <div className="flex items-center gap-3 p-4 bg-purple-50 rounded-lg">
+                  <Code className="text-purple-600" size={24} />
+                  <div>
+                    <h4 className="font-semibold text-gray-800">{t("about.expertise.technology.title")}</h4>
+                    <p className="text-sm text-gray-600">{t("about.expertise.technology.description")}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
-                <BookOpen className="text-green-600" size={24} />
-                <div>
-                  <h4 className="font-semibold text-gray-800">Author</h4>
-                  <p className="text-sm text-gray-600">Visual Storyteller</p>
+                <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+                  <BookOpen className="text-green-600" size={24} />
+                  <div>
+                    <h4 className="font-semibold text-gray-800">{t("about.expertise.author.title")}</h4>
+                    <p className="text-sm text-gray-600">{t("about.expertise.author.description")}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3 p-4 bg-orange-50 rounded-lg">
-                <Lightbulb className="text-orange-600" size={24} />
-                <div>
-                  <h4 className="font-semibold text-gray-800">Innovation</h4>
-                  <p className="text-sm text-gray-600">Kin-StartupLab</p>
+                <div className="flex items-center gap-3 p-4 bg-orange-50 rounded-lg">
+                  <Lightbulb className="text-orange-600" size={24} />
+                  <div>
+                    <h4 className="font-semibold text-gray-800">{t("about.expertise.innovation.title")}</h4>
+                    <p className="text-sm text-gray-600">{t("about.expertise.innovation.description")}</p>
+                  </div>
                 </div>
               </div>
             </div>
