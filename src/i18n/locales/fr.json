@@ -1,0 +1,159 @@
+{
+  "hero": {
+    "title": "Une Décennie d'",
+    "titleSecond": "Innovation et d'Aventure",
+    "description": "Enraciné dans la technologie dès le plus jeune âge grâce à des études au lycée en systèmes de signalisation, automatisation et logique binaire, j'ai ensuite fait une transition vers le cinéma, produisant des documentaires primés après avoir obtenu un Bachelor of Arts de CPUT. Aujourd'hui, je combine la pensée créative et analytique en tant qu'analyste en cybersécurité et directeur de la sécurité informatique virtuel, tout en explorant la sagesse ancienne à travers la Peinture Nzaaa, mon expression dans l'art visuel.",
+    "subtitle": "Explorer, créer, sécuriser — toujours évoluer.",
+    "exploreJourney": "Explorer Mon Parcours",
+    "viewGallery": "Voir la Galerie Nzaaa"
+  },
+  "about": {
+    "title": "À Propos de Tresor Ilunga Mukuna",
+    "paragraph1": "Passionné par l'innovation, la cybersécurité, la technologie numérique et la narration visuelle, j'apporte une base solide en pensée analytique et résolution de problèmes. Je me spécialise dans l'analyse des menaces, les évaluations de vulnérabilité et l'atténuation des risques, avec une expertise couvrant SIEM, réseaux, architecture de sécurité et sécurité cloud.",
+    "paragraph2": "En tant qu'Analyste en Cybersécurité chez Webeet.io, je soutiens les opérations de sécurité d'entreprise et les initiatives de conformité—me concentrant sur l'atténuation des risques, les examens d'infrastructure cloud et l'alignement des pratiques de sécurité avec les cadres GRC comme GDPR et ISO 27001.",
+    "paragraph3": "Servant également comme vCISO et consultant, j'aide les organisations à protéger les données et gérer le risque cyber tout en traduisant des concepts de sécurité complexes en stratégies actionnables. Au-delà de la cybersécurité, je suis auteur, conteur visuel et co-fondateur de Kin-StartupLab—où la créativité et l'entrepreneuriat conduisent des solutions orientées technologie.",
+    "expertise": {
+      "cybersecurity": "Cybersécurité",
+      "cybersecurityDesc": "vCISO & Consultant",
+      "technology": "Technologie",
+      "technologyDesc": "Innovation Numérique",
+      "author": "Auteur",
+      "authorDesc": "Conteur Visuel",
+      "innovation": "Innovation",
+      "innovationDesc": "Kin-StartupLab"
+    }
+  },
+  "timeline": {
+    "title": "Mon Parcours Professionnel",
+    "description": "Du diplômé en Sciences du Cinéma à l'Analyste en Cybersécurité - un parcours couvrant les projets d'eau en Afrique, l'entrepreneuriat d'innovation, l'expression artistique et l'expertise technique.",
+    "learnMore": "En savoir plus →"
+  },
+  "waterProject": {
+    "title": "Projet d'Eau pour l'Afrique",
+    "description": "Un voyage pour apporter de l'eau propre et potable aux communautés au cœur de l'Afrique - la patrie KONGO.",
+    "subtitle": "Apporter l'Eau à la Vie",
+    "paragraph1": "Répondant à l'appel des ancêtres et au besoin urgent des communautés, ce projet représente un voyage spirituel et pratique pour fournir l'accès à des sources d'eau propres et potables dans la région KONGO.",
+    "paragraph2": "Ce qui a commencé comme une mission simple pour traiter la pénurie d'eau est devenu une aventure transformatrice qui a touché la vie de communautés entières, révélant la connexion profonde entre l'humanité et cet élément sacré.",
+    "paragraph3": "Le projet montre la rencontre magique entre les communautés et les sources d'eau, démontrant comment l'accès à l'eau propre crée des ondulations de joie, santé et prospérité à travers les communautés africaines.",
+    "impact": {
+      "cleanWater": "Eau Propre",
+      "cleanWaterDesc": "Accès aux sources d'eau potable",
+      "community": "Communauté",
+      "communityDesc": "Transformer les vies ensemble",
+      "spiritual": "Voyage Spirituel",
+      "spiritualDesc": "Connexion à la sagesse ancestrale"
+    }
+  },
+  "innovation": {
+    "title": "Innovation et Aventure Africaine",
+    "description": "Explorer l'intersection de la tradition et de l'innovation à travers le continent africain.",
+    "subtitle": "Voyage de Découverte",
+    "paragraph1": "À travers Kin-StartupLab et divers projets d'innovation, j'ai exploré le vaste potentiel de l'entrepreneuriat africain et de l'avancement technologique, connectant la sagesse traditionnelle avec des solutions modernes.",
+    "paragraph2": "Le voyage à travers l'Afrique a été un d'apprentissage continu, où chaque communauté visitée a offert des perspectives uniques sur le développement durable, l'innovation et le pouvoir de l'action collective.",
+    "paragraph3": "Des expéditions en caravane mobile aux laboratoires d'innovation communautaires, ces aventures ont façonné ma compréhension de comment la technologie et la tradition peuvent travailler ensemble pour créer un impact positif durable.",
+    "areas": {
+      "exploration": "Exploration",
+      "explorationDesc": "Aventures continentales",
+      "innovation": "Innovation",
+      "innovationDesc": "Écosystèmes de startups",
+      "impact": "Impact",
+      "impactDesc": "Développement communautaire"
+    }
+  },
+  "cybersecurity": {
+    "title": "Excellence en Cybersécurité",
+    "description": "Protéger les actifs numériques et construire des cadres de sécurité résilients pour le monde moderne.",
+    "subtitle": "Sécuriser les Futurs Numériques",
+    "paragraph1": "En tant que professionnel de la cybersécurité, je me spécialise dans l'analyse des menaces, les évaluations de vulnérabilité et l'atténuation des risques. Mon expertise couvre les technologies SIEM, la sécurité réseau, l'infrastructure cloud et les cadres de conformité.",
+    "paragraph2": "Chez Webeet.io, je soutiens les opérations de sécurité d'entreprise tout en assurant la conformité avec les cadres internationaux comme GDPR et ISO 27001. Mon rôle implique la surveillance continue, la réponse aux incidents et la planification stratégique de sécurité.",
+    "paragraph3": "Au-delà de l'expertise technique, je sers comme CISO virtuel, aidant les organisations à traduire les défis de sécurité complexes en stratégies actionnables qui protègent à la fois les actifs numériques et la continuité des affaires.",
+    "expertise": {
+      "threatAnalysis": "Analyse des Menaces",
+      "threatAnalysisDesc": "Détection avancée des menaces",
+      "compliance": "Conformité",
+      "complianceDesc": "GDPR & ISO 27001",
+      "consulting": "Conseil vCISO",
+      "consultingDesc": "Guidance stratégique de sécurité"
+    }
+  },
+  "book": {
+    "title": "Le Livre de Nzaaa",
+    "description": "Une exploration de la sagesse ancienne et des perspectives modernes à travers la narration visuelle et l'éveil spirituel.",
+    "subtitle": "Sagesse des Âges",
+    "paragraph1": "Le Livre de Nzaaa représente une fusion unique de la sagesse africaine ancienne et de la compréhension contemporaine, explorant les thèmes de l'éveil spirituel, la connexion communautaire et le pouvoir de la narration visuelle.",
+    "paragraph2": "À travers une combinaison de narration, d'art visuel et de réflexion philosophique, cette œuvre invite les lecteurs à explorer des questions plus profondes sur l'identité, le but et l'interconnexion de toute vie.",
+    "paragraph3": "Chaque page sert de pont entre les systèmes de connaissance traditionnels et les perspectives modernes, offrant des perspectives qui résonnent à travers les cultures et les générations.",
+    "themes": {
+      "wisdom": "Sagesse Ancienne",
+      "wisdomDesc": "Systèmes de connaissance traditionnels",
+      "storytelling": "Narration Visuelle",
+      "storytellingDesc": "L'art comme médium narratif",
+      "awakening": "Éveil Spirituel",
+      "awakeningDesc": "Exploration de la conscience"
+    }
+  },
+  "cineflix": {
+    "title": "Productions Cineflix",
+    "description": "Production de films et vidéos primée présentant des histoires africaines et des perspectives globales.",
+    "subtitle": "Excellence en Narration Visuelle",
+    "paragraph1": "À travers Cineflix Productions, j'ai créé des documentaires et films convaincants qui mettent en valeur la richesse de la culture africaine tout en abordant des thèmes universels de l'expérience humaine.",
+    "paragraph2": "Mon travail en production cinématographique s'étend à travers Berlin et Cape Town, créant du contenu qui comble les divisions culturelles et raconte des histoires qui pourraient autrement rester inexprimées.",
+    "paragraph3": "Chaque production est une opportunité d'explorer de nouvelles perspectives, défier les suppositions et créer des connexions significatives entre des audiences diverses et des narratifs authentiques.",
+    "focus": {
+      "documentaries": "Documentaires",
+      "documentariesDesc": "Vraies histoires, vrai impact",
+      "cultural": "Films Culturels",
+      "culturalDesc": "Relier les communautés",
+      "storytelling": "Narratifs Visuels",
+      "storytellingDesc": "Narration convaincante"
+    }
+  },
+  "gallery": {
+    "title": "Galerie Nzaaa",
+    "description": "Explorer les histoires inexprimées, l'éveil spirituel et la sagesse des âges à travers l'art visuel.",
+    "subtitle": "L'Art comme Expression Spirituelle",
+    "paragraph1": "La Galerie Nzaaa représente mon voyage dans l'art visuel comme médium pour explorer les thèmes spirituels, la sagesse ancienne et la transformation personnelle.",
+    "paragraph2": "Chaque pièce de la collection sert de fenêtre vers différents aspects de la conscience, de la mémoire culturelle et du dialogue continu entre tradition et modernité.",
+    "paragraph3": "À travers la peinture et les médias mixtes, je cherche à créer des œuvres qui invitent à la contemplation, inspirent le dialogue et connectent les spectateurs avec des aspects plus profonds de l'expérience humaine.",
+    "viewGallery": "Voir la Galerie Complète",
+    "themes": {
+      "spiritual": "Thèmes Spirituels",
+      "spiritualDesc": "Exploration de la conscience",
+      "cultural": "Mémoire Culturelle",
+      "culturalDesc": "Sagesse ancestrale",
+      "modern": "Expression Moderne",
+      "modernDesc": "Interprétation contemporaine"
+    }
+  },
+  "contact": {
+    "title": "Connectons-nous",
+    "description": "Prêt à collaborer, partager des idées ou explorer de nouvelles opportunités ? J'aimerais avoir de vos nouvelles.",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "message": "Votre Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "connect": {
+      "title": "Connectez-vous avec Moi",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "portfolio": "Portfolio"
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "journey": "Parcours",
+    "waterProject": "Projet d'Eau",
+    "innovation": "Innovation",
+    "cybersecurity": "Cybersécurité",
+    "book": "Livre",
+    "cineflix": "Cineflix",
+    "gallery": "Galerie Nzaaa",
+    "contact": "Contact"
+  }
+}
