@@ -17,21 +17,14 @@ const WaterProject = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
           {/* Water Project Images */}
           <div className="flex flex-col items-center space-y-6">
-            {/* Top pyramid - 6 small images */}
+            {/* Top pyramid - 6 small images in triangle formation */}
             <div className="flex flex-col items-center space-y-3">
-              {/* Top row - 2 images */}
-              <div className="flex gap-3">
+              {/* Top row - 1 image */}
+              <div className="flex">
                 <div className="relative group">
                   <img 
                     src="/lovable-uploads/8f5b8cbe-c285-4c23-a397-346cb4bb75ce.png" 
                     alt="Community collecting water" 
-                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative group">
-                  <img 
-                    src="/lovable-uploads/0eac97b0-a13b-480f-b98a-2400e607cd7e.png" 
-                    alt="Clean water flowing" 
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -41,11 +34,22 @@ const WaterProject = () => {
               <div className="flex gap-4">
                 <div className="relative group">
                   <img 
+                    src="/lovable-uploads/0eac97b0-a13b-480f-b98a-2400e607cd7e.png" 
+                    alt="Clean water flowing" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group">
+                  <img 
                     src="/lovable-uploads/22280363-305f-42a2-9051-409e70c61dda.png" 
                     alt="Community celebration" 
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
+              </div>
+              
+              {/* Bottom row - 3 images */}
+              <div className="flex gap-3">
                 <div className="relative group">
                   <img 
                     src="/lovable-uploads/5210def7-99b8-4dc8-80bc-1978e0a60a77.png" 
@@ -53,10 +57,6 @@ const WaterProject = () => {
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-              </div>
-              
-              {/* Bottom row - 2 images */}
-              <div className="flex gap-3">
                 <div className="relative group">
                   <img 
                     src="/lovable-uploads/28869b21-6e40-474b-b45a-9c075a0e516e.png" 
