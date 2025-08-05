@@ -27,9 +27,8 @@ const LanguageSwitcher = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 rounded-md hover:bg-blue-50"
       >
-        {isTranslating ? <Loader size={18} className="animate-spin" /> : <Globe size={18} />}
+        {isTranslating ? <Loader size={18} className="animate-spin" /> : <span className="text-lg">{currentLanguage.flag}</span>}
         <span className="hidden sm:inline text-sm font-medium">{currentLanguage.name}</span>
-        <span className="sm:hidden">{currentLanguage.flag}</span>
         <ChevronDown size={16} className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
