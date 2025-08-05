@@ -1,5 +1,5 @@
 
-import { ShoppingCart, Book as BookIcon } from "lucide-react";
+import { ShoppingCart, Book as BookIcon, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Book = () => {
@@ -70,7 +70,7 @@ const Book = () => {
                   <span className="text-3xl font-bold text-blue-600">€9.90</span>
                   <p className="text-sm text-gray-600">Shipping within Germany: €4.50</p>
                 </div>
-                <BookIcon className="text-blue-500" size={24} />
+                <Heart className="text-red-500" size={24} />
               </div>
               
               <div className="space-y-3">
