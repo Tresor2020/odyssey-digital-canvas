@@ -33,7 +33,7 @@ const Timeline = () => {
       description: "Embarked on an epic 9-month journey across Africa in a caravan with my 2-year-old daughter, working on social innovation projects and founding Kin-StartupLAB.",
       icon: Camera,
       color: "from-green-400 to-teal-500",
-      image: "/lovable-uploads/african-adventure-strong-blur.png",
+      image: "/lovable-uploads/african-adventure-face-blur.png",
     },
     {
       year: "June 2020 - January 2024",
