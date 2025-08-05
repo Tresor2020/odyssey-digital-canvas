@@ -1,4 +1,5 @@
 
+
 import { Shield, Code, BookOpen, Lightbulb } from "lucide-react";
 
 const About = () => {
@@ -28,49 +29,46 @@ const About = () => {
           <div className="space-y-6 order-1 lg:order-2">
             <div className="prose prose-gray max-w-none">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
-                I am Tresor ILunga Mukuna, a passionate explorer, innovator, and technology leader with a deep commitment to bridging African innovation with global solutions. My journey spans from the ancient kingdoms of Kongo to modern cybersecurity landscapes.
+                Passionate about innovation, cybersecurity, digital technology, and visual storytelling, I bring a strong foundation in analytical thinking and problem-solving. I specialize in threat analysis, vulnerability assessments, and risk mitigation, with expertise spanning SIEM, networking, security architecture, and cloud security.
               </p>
               
               <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
-                As an author, I've documented the rich history of African civilizations, particularly the Kongo Kingdom's enduring legacy. Through my exploration projects across Africa, I've witnessed firsthand the continent's incredible potential for innovation and technological advancement.
+                As a Cybersecurity Analyst at Webeet.io, I support enterprise security operations and compliance initiatives—focusing on risk mitigation, cloud infrastructure reviews, and aligning security practices with GRC frameworks like GDPR and ISO 27001.
               </p>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-lg">
-                My work in cybersecurity and technology focuses on creating secure, accessible solutions that can benefit communities across Africa and beyond. I believe in the power of storytelling, exploration, and technology to create positive change in the world.
+                Serving also as a vCISO and consultant, I help organizations protect data and manage cyber risk while translating complex security concepts into actionable strategies. Beyond cybersecurity, I'm an author, visual storyteller, and co-founder of Kin-StartupLab—where creativity and entrepreneurship drive tech-forward solutions.
               </p>
             </div>
 
             {/* Expertise Areas */}
-            <div className="mt-6 sm:mt-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Areas of Expertise</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg">
-                  <Shield className="text-blue-600" size={24} />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Cybersecurity</h4>
-                    <p className="text-sm text-gray-600">Advanced security solutions and threat assessment</p>
-                  </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
+              <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg">
+                <Shield className="text-blue-600" size={24} />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Cybersecurity</h4>
+                  <p className="text-sm text-gray-600">vCISO & Consultant</p>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-purple-50 rounded-lg">
-                  <Code className="text-purple-600" size={24} />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Technology</h4>
-                    <p className="text-sm text-gray-600">Innovative tech solutions for African markets</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3 p-4 bg-purple-50 rounded-lg">
+                <Code className="text-purple-600" size={24} />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Technology</h4>
+                  <p className="text-sm text-gray-600">Digital Innovation</p>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
-                  <BookOpen className="text-green-600" size={24} />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Author</h4>
-                    <p className="text-sm text-gray-600">Historical documentation and storytelling</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3 p-4 bg-green-50 rounded-lg">
+                <BookOpen className="text-green-600" size={24} />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Author</h4>
+                  <p className="text-sm text-gray-600">Visual Storyteller</p>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-orange-50 rounded-lg">
-                  <Lightbulb className="text-orange-600" size={24} />
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Innovation</h4>
-                    <p className="text-sm text-gray-600">Bridging traditional knowledge with modern tech</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3 p-4 bg-orange-50 rounded-lg">
+                <Lightbulb className="text-orange-600" size={24} />
+                <div>
+                  <h4 className="font-semibold text-gray-800">Innovation</h4>
+                  <p className="text-sm text-gray-600">Kin-StartupLab</p>
                 </div>
               </div>
             </div>

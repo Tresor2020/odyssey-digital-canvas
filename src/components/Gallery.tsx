@@ -2,10 +2,8 @@
 import { ChevronRight, Eye, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
-  const { t } = useTranslation();
   const paypalOptions = {
     clientId: "test", // In production, use your actual PayPal client ID
     currency: "EUR",
@@ -18,13 +16,13 @@ const Gallery = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              {t("gallery.title")}
+              Nzaaa Gallery
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-              {t("gallery.subtitle")}
+              Untold stories and spiritual awakening through visual art — what is obvious but out of sight for modern man. a glimpse of wisdom of the ages.
             </p>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-              {t("gallery.description")}
+              Digitally scanned, signed and printed artwork available for purchase. A3 format: €25 (other formats available upon request). Delivery +7 EUR in Europe. Payment via PayPal (tresor.mac@gmail.com).
             </p>
             
             {/* Gallery Exhibition Poster */}
@@ -112,12 +110,12 @@ const Gallery = () => {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
-              {t("gallery.cta.description")}
+              Each piece invites viewers to transcend ordinary perception and glimpse the deeper currents of spiritual and cultural truths.
             </p>
             
             
             <Button className="px-8 py-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
-              {t("gallery.cta.button")}
+              Explore Full Gallery
               <ChevronRight size={18} />
             </Button>
           </div>

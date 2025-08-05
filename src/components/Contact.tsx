@@ -6,11 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { toast } = useToast();
-  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -74,10 +72,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-            {t("contact.title")}
+            Get In Touch
           </h2>
           <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            {t("contact.subtitle")}
+            Ready to discuss your next project? Let's connect and explore how we can work together.
           </p>
         </div>
 
@@ -85,7 +83,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              {t("contact.info.title")}
+              Contact Information
             </h3>
             
             <div className="space-y-6">
@@ -94,8 +92,8 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">{t("contact.form.email")}</h4>
-                  <p className="text-gray-600">{t("contact.info.email")}</p>
+                  <h4 className="font-semibold text-gray-900">Email</h4>
+                  <p className="text-gray-600">tresor.mac@gmail.com</p>
                 </div>
               </div>
 
@@ -104,9 +102,9 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">{t("contact.info.phone")}</h4>
-                  <p className="text-gray-600">{t("contact.info.phoneNumber")}</p>
-                  <p className="text-gray-600">{t("contact.info.whatsapp")}</p>
+                  <h4 className="font-semibold text-gray-900">Phone & WhatsApp</h4>
+                  <p className="text-gray-600">Phone: +49 30 - 98434071</p>
+                  <p className="text-gray-600">WhatsApp: +49 152 04443475</p>
                 </div>
               </div>
 
@@ -115,9 +113,9 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">{t("contact.info.location")}</h4>
-                  <p className="text-gray-600">{t("contact.info.locations")}</p>
-                  <p className="text-gray-600">{t("contact.info.remote")}</p>
+                  <h4 className="font-semibold text-gray-900">Locations</h4>
+                  <p className="text-gray-600">Berlin-Germany, Kinshasa DRC, Cape Town SA</p>
+                  <p className="text-gray-600">Available worldwide for remote collaboration</p>
                 </div>
               </div>
             </div>
@@ -126,7 +124,7 @@ const Contact = () => {
           {/* Contact Form */}
           <Card>
             <CardHeader>
-              <CardTitle>{t("contact.form.title")}</CardTitle>
+              <CardTitle>Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -134,7 +132,7 @@ const Contact = () => {
                   <div>
                     <Input 
                       name="firstName"
-                      placeholder={t("contact.form.firstName")} 
+                      placeholder="First Name" 
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
@@ -143,7 +141,7 @@ const Contact = () => {
                   <div>
                     <Input 
                       name="lastName"
-                      placeholder={t("contact.form.lastName")} 
+                      placeholder="Last Name" 
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
@@ -152,7 +150,7 @@ const Contact = () => {
                 </div>
                 <Input 
                   name="email"
-                  placeholder={t("contact.form.email")} 
+                  placeholder="Email Address" 
                   type="email" 
                   value={formData.email}
                   onChange={handleInputChange}
@@ -160,14 +158,14 @@ const Contact = () => {
                 />
                 <Input 
                   name="subject"
-                  placeholder={t("contact.form.subject")} 
+                  placeholder="Subject" 
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
                 />
                 <Textarea 
                   name="message"
-                  placeholder={t("contact.form.message")}
+                  placeholder="Your message..."
                   className="min-h-[120px]"
                   value={formData.message}
                   onChange={handleInputChange}
@@ -175,7 +173,7 @@ const Contact = () => {
                 />
                 <Button type="submit" className="w-full" disabled={isSubmitting}>
                   <Send className="h-4 w-4 mr-2" />
-                  {isSubmitting ? t("contact.form.sending") : t("contact.form.send")}
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>

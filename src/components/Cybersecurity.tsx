@@ -1,9 +1,7 @@
 
 import { Shield, Lock, Cloud, Eye, AlertTriangle, Network, Database, Key } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 const Cybersecurity = () => {
-  const { t } = useTranslation();
   return (
     <section id="cybersecurity" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
       {/* Background Effects */}
@@ -14,7 +12,7 @@ const Cybersecurity = () => {
         {/* Header with Hero Image */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-yellow-400 to-amber-300 bg-clip-text text-transparent">
-            {t("cybersecurity.title")}
+            CYBER SECURITY
           </h2>
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-16 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 rounded"></div>
@@ -33,7 +31,8 @@ const Cybersecurity = () => {
           </div>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            {t("cybersecurity.subtitle")}
+            Protecting digital assets through advanced threat analysis, vulnerability assessments, and strategic security architecture. 
+            Bridging ancient wisdom with modern cybersecurity practices.
           </p>
         </div>
 
