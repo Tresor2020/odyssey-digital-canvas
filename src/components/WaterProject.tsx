@@ -1,5 +1,5 @@
 
-import { Droplets, Heart, Users } from "lucide-react";
+import { Droplets, Users } from "lucide-react";
 
 const WaterProject = () => {
   return (
@@ -154,7 +154,7 @@ const WaterProject = () => {
                 <p className="text-sm text-gray-600">Transforming lives together</p>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-md">
-                <Heart className="mx-auto text-red-500 mb-2" size={32} />
+                <Droplets className="mx-auto text-blue-500 mb-2" size={32} />
                 <h4 className="font-semibold text-gray-800">Spiritual Journey</h4>
                 <p className="text-sm text-gray-600">Connection to ancestral wisdom</p>
               </div>
