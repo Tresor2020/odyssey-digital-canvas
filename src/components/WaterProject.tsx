@@ -1,16 +1,18 @@
 
 import { Droplets, Heart, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const WaterProject = () => {
+  const { t } = useTranslation();
   return (
     <section id="water-project" className="py-12 sm:py-20 bg-gradient-to-br from-cyan-50 to-blue-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
-            Water Project for Africa
+            {t("waterProject.title")}
           </h2>
           <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            A journey to bring clean, potable water to communities in the heart of Africa - the KONGO homeland.
+            {t("waterProject.subtitle")}
           </p>
         </div>
 
@@ -30,18 +32,18 @@ const WaterProject = () => {
           {/* Project Details */}
           <div className="space-y-4 sm:space-y-6">
             <div>
-              <h3 className="text-xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">Bringing Water to Life</h3>
+              <h3 className="text-xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">{t("waterProject.content.title")}</h3>
               <div className="prose prose-gray max-w-none">
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  Responding to the call of ancestors and the urgent need of communities, this project represents a spiritual and practical journey to provide access to clean, drinkable water sources in the KONGO region.
+                  {t("waterProject.content.paragraph1")}
                 </p>
                 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  What began as a simple mission to address water scarcity became a transformative adventure that touched the lives of entire communities, revealing the profound connection between humanity and this sacred element.
+                  {t("waterProject.content.paragraph2")}
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  The project showcases the magical encounter between communities and water sources, demonstrating how access to clean water creates ripples of joy, health, and prosperity throughout African communities.
+                  {t("waterProject.content.paragraph3")}
                 </p>
               </div>
             </div>
@@ -50,18 +52,18 @@ const WaterProject = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
               <div className="text-center p-4 bg-white rounded-lg shadow-md">
                 <Droplets className="mx-auto text-cyan-600 mb-2" size={32} />
-                <h4 className="font-semibold text-gray-800">Clean Water</h4>
-                <p className="text-sm text-gray-600">Access to potable water sources</p>
+                <h4 className="font-semibold text-gray-800">{t("waterProject.impact.cleanWater.title")}</h4>
+                <p className="text-sm text-gray-600">{t("waterProject.impact.cleanWater.description")}</p>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-md">
                 <Users className="mx-auto text-blue-600 mb-2" size={32} />
-                <h4 className="font-semibold text-gray-800">Community</h4>
-                <p className="text-sm text-gray-600">Transforming lives together</p>
+                <h4 className="font-semibold text-gray-800">{t("waterProject.impact.community.title")}</h4>
+                <p className="text-sm text-gray-600">{t("waterProject.impact.community.description")}</p>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-md">
                 <Heart className="mx-auto text-red-500 mb-2" size={32} />
-                <h4 className="font-semibold text-gray-800">Spiritual Journey</h4>
-                <p className="text-sm text-gray-600">Connection to ancestral wisdom</p>
+                <h4 className="font-semibold text-gray-800">{t("waterProject.impact.spiritual.title")}</h4>
+                <p className="text-sm text-gray-600">{t("waterProject.impact.spiritual.description")}</p>
               </div>
             </div>
           </div>

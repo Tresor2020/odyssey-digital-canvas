@@ -1,7 +1,9 @@
 
 import { Award, Film, Camera, School, User, Droplets, Book, Shield } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Timeline = () => {
+  const { t } = useTranslation();
   const timelineItems = [
     {
       year: "Nov 2024 - Present",
@@ -88,10 +90,10 @@ const Timeline = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            My Professional Journey
+            {t("timeline.title")}
           </h2>
           <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            From Film Science graduate to Cybersecurity Analyst - a journey spanning water projects in Africa, innovation entrepreneurship, artistic expression, and technical expertise.
+            {t("timeline.subtitle")}
           </p>
         </div>
 

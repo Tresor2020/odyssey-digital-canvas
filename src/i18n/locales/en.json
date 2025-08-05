@@ -44,133 +44,80 @@
     }
   },
   "timeline": {
-    "title": "My Journey",
-    "subtitle": "From Ancient Kingdoms to Modern Innovation",
-    "events": {
-      "2015": {
-        "title": "Academic Foundation",
-        "description": "Began studying African history and technology at university, focusing on the intersection of traditional knowledge and modern innovation."
-      },
-      "2017": {
-        "title": "First Exploration",
-        "description": "Launched my first major exploration project across Central Africa, documenting traditional practices and their relevance to modern challenges."
-      },
-      "2019": {
-        "title": "Cybersecurity Career",
-        "description": "Started working in cybersecurity, developing security solutions tailored for African businesses and institutions."
-      },
-      "2021": {
-        "title": "Water Project Initiative",
-        "description": "Initiated the clean water access project in rural communities, combining traditional water management with modern purification technology."
-      },
-      "2023": {
-        "title": "Published Author",
-        "description": "Published 'The Long and Last Kongo War 1517-2025', documenting the historical and contemporary struggles of the Kongo people."
-      },
-      "2024": {
-        "title": "Innovation Platform",
-        "description": "Launched platform connecting African innovators with global markets, fostering technological advancement across the continent."
-      }
-    }
+    "title": "My Professional Journey",
+    "subtitle": "From Film Science graduate to Cybersecurity Analyst - a journey spanning water projects in Africa, innovation entrepreneurship, artistic expression, and technical expertise."
   },
   "waterProject": {
-    "title": "Clean Water Initiative",
-    "subtitle": "Bringing Hope Through Innovation",
-    "description": "Our clean water project combines traditional African water management techniques with modern purification technology to provide sustainable access to clean water in rural communities across Central Africa.",
-    "details": {
-      "title": "Project Impact",
-      "paragraph1": "This initiative represents more than just access to clean water—it's about preserving dignity, enabling education, and fostering community development. By working closely with local leaders and incorporating traditional knowledge, we've created solutions that are both effective and culturally appropriate.",
-      "paragraph2": "The project has successfully implemented water purification systems in over 15 communities, directly benefiting thousands of families and supporting local economic development through improved health outcomes and increased productivity."
+    "title": "Water Project for Africa",
+    "subtitle": "A journey to bring clean, potable water to communities in the heart of Africa - the KONGO homeland.",
+    "content": {
+      "title": "Bringing Water to Life",
+      "paragraph1": "Responding to the call of ancestors and the urgent need of communities, this project represents a spiritual and practical journey to provide access to clean, drinkable water sources in the KONGO region.",
+      "paragraph2": "What began as a simple mission to address water scarcity became a transformative adventure that touched the lives of entire communities, revealing the profound connection between humanity and this sacred element.",
+      "paragraph3": "The project showcases the magical encounter between communities and water sources, demonstrating how access to clean water creates ripples of joy, health, and prosperity throughout African communities."
     },
     "impact": {
-      "communities": {
-        "number": "15+",
-        "label": "Communities Served"
+      "cleanWater": {
+        "title": "Clean Water",
+        "description": "Access to potable water sources"
       },
-      "people": {
-        "number": "5000+",
-        "label": "Lives Impacted"
+      "community": {
+        "title": "Community",
+        "description": "Transforming lives together"
       },
-      "sustainability": {
-        "number": "100%",
-        "label": "Sustainable Solutions"
+      "spiritual": {
+        "title": "Spiritual Journey",
+        "description": "Connection to ancestral wisdom"
       }
     }
   },
   "innovation": {
     "title": "African Innovation & Adventure",
-    "subtitle": "Discovering Tomorrow's Solutions Today",
-    "description": "Join me on an extraordinary journey across Africa, where ancient wisdom meets cutting-edge technology. From the bustling markets of Kinshasa to the remote villages of the Congo Basin, we're uncovering innovations that could change the world.",
+    "subtitle": "Exploring the intersection of tradition and innovation across the African continent.",
     "content": {
-      "title": "A Journey of Discovery",
-      "paragraph1": "Africa is a continent of incredible innovation, where necessity drives creativity and traditional knowledge provides the foundation for breakthrough solutions. My explorations have taken me to places where entrepreneurs are solving global challenges with locally-inspired innovations.",
-      "paragraph2": "From solar-powered irrigation systems developed by farmers to blockchain-based financial services created by young technologists, Africa is writing the future of global innovation. These stories need to be told, and these innovations need to reach the world stage."
+      "title": "Journey of Discovery",
+      "paragraph1": "Through Kin-StartupLab and various innovation projects, I've explored the vast potential of African entrepreneurship and technological advancement, connecting traditional wisdom with modern solutions.",
+      "paragraph2": "The journey across Africa has been one of continuous learning, where each community visited offered unique insights into sustainable development, innovation, and the power of collective action.",
+      "paragraph3": "From mobile caravan expeditions to community-based innovation labs, these adventures have shaped my understanding of how technology and tradition can work together to create lasting positive impact."
     },
     "areas": {
       "exploration": {
         "title": "Exploration",
-        "description": "Discovering hidden innovations across the continent"
+        "description": "Continental adventures"
       },
       "innovation": {
         "title": "Innovation",
-        "description": "Connecting traditional wisdom with modern technology"
+        "description": "Startup ecosystems"
       },
       "impact": {
         "title": "Impact",
-        "description": "Creating sustainable solutions for global challenges"
+        "description": "Community development"
       }
     }
   },
   "cybersecurity": {
-    "title": "Cybersecurity Excellence",
-    "subtitle": "Protecting Africa's Digital Future",
-    "description": "As Africa's digital economy grows rapidly, cybersecurity becomes crucial for sustainable development. I specialize in creating robust security frameworks that protect both traditional businesses and innovative startups across the continent.",
-    "services": {
-      "title": "Security Services",
-      "threatAssessment": {
-        "title": "Threat Assessment",
-        "description": "Comprehensive analysis of security vulnerabilities and risk factors specific to African business environments."
-      },
-      "securityFramework": {
-        "title": "Security Framework",
-        "description": "Development of tailored security protocols that balance protection with accessibility for growing businesses."
-      },
-      "incidentResponse": {
-        "title": "Incident Response",
-        "description": "Rapid response and recovery solutions designed for the unique challenges of African infrastructure."
-      },
-      "training": {
-        "title": "Training & Education",
-        "description": "Capacity building programs to develop local cybersecurity expertise and awareness."
-      }
-    },
-    "expertise": {
-      "title": "Areas of Expertise",
-      "networkSecurity": "Network Security",
-      "dataProtection": "Data Protection",
-      "incidentManagement": "Incident Management",
-      "compliance": "Compliance & Governance"
-    }
+    "title": "CYBER SECURITY",
+    "subtitle": "Protecting digital assets through advanced threat analysis, vulnerability assessments, and strategic security architecture. Bridging ancient wisdom with modern cybersecurity practices."
   },
   "book": {
-    "title": "Latest Publication",
-    "bookTitle": "The Long and Last Kongo War",
-    "bookSubtitle": "1517-2025",
-    "author": "by Tresor ILunga Mukuna",
-    "description": "A comprehensive historical account of the Kongo Kingdom's enduring struggle for independence and cultural preservation. This book traces the continuous resistance from the Portuguese invasion of 1517 to the contemporary challenges facing the Kongo people in 2025.",
+    "title": "Published Book",
+    "subtitle": "A spiritual journey through the heart of Africa, exploring the sacred connection between humanity and water.",
+    "bookTitle": "KONGO Spirit Water - Journey",
+    "author": "by Tresor Ilunga Mukuna",
+    "newRelease": "NEW BOOK RELEASE",
+    "description": {
+      "paragraph1": "With an enthusiastic and positive attitude, I responded to a spirit and echoing voice from my ancestors to come back into the heart of Africa, my homeland the KONGO to start a project adventure for a search of potable and drinkable water sources for my community well as my parent who was lacking it daily.",
+      "paragraph2": "Although we witness the magical encounter of man and water source, however, success wasn't the final destination. An adventure that turns out not only to be an awakening journey that took me, my family, and the whole community into the tunnel voyage of fear, sorrow, nostalgia from the past, world political glimpses, organized religion, the sacred African spirituality, and now the spiritual crisis in Africa, the illusion of existing enemies, witnessing angels in the sky and evil-doers dancing then facing a mirror of witchcraft and realized that death was the only way toward awakening.",
+      "paragraph3": "A journey of inner and outer surrender which reveals the natural secret of self-healing methods, which we all have abilities to access and manifest. A concord adventure that was the echoes of African ancestors. A journey beyond the shadow of doubt and the encounter of man and water throughout the rise up of the shining sun."
+    },
     "spiritualDimension": {
       "title": "SPIRITUAL DIMENSION OF WATER",
-      "quote": "Water is not just a resource—it's the spiritual foundation of life, connecting us to our ancestors and guiding us toward a sustainable future."
-    },
-    "details": {
-      "pages": "450 pages of meticulously researched history",
-      "research": "Based on oral traditions, historical documents, and contemporary interviews",
-      "impact": "Essential reading for understanding Central African history and contemporary politics"
+      "description": "If there is one sacred element in our beautiful blue planet that can claim an ability to contain physical and spiritual energies from a macro-level which connect us all, well as scientific and spiritual information on every living thing and being, it is for sure our MOTHER WATER - A carrier of it all. Water is a living spirit, full of life, and those who obey and surrender to it will flourish.",
+      "quote": "\"Where water is the Lord there, the land must obey.\" – African Proverb"
     },
     "pricing": {
-      "price": "$29.99",
-      "shipping": "Free shipping worldwide",
-      "availability": "Available in hardcover and digital formats"
+      "price": "€9.90",
+      "shipping": "Shipping within Germany: €4.50"
     },
     "buttons": {
       "purchase": "Purchase Book",
@@ -178,86 +125,58 @@
     }
   },
   "cineflix": {
-    "title": "Cineflix Collection",
-    "subtitle": "Visual Storytelling & Cultural Documentation",
-    "description": "Through the lens of cinema, I capture the essence of African innovation, culture, and transformation. My film collection showcases untold stories of resilience, creativity, and progress across the continent.",
+    "title": "Cineflix",
+    "subtitle": "A dedicated space for my documentaries, short films, and cinematic experiments. From cultural memory to radical innovation, these visual stories reflect my journey as a filmmaker, storyteller, and seeker.",
+    "description": "Inspired by the original Cineflix Archive at KinStartupLab",
     "categories": {
       "documentaries": {
         "title": "Documentaries",
-        "description": "In-depth explorations of African innovation and cultural heritage"
+        "description": "Award-winning documentaries exploring cultural narratives and human stories"
       },
       "shortFilms": {
         "title": "Short Films",
-        "description": "Capturing moments of inspiration and human connection"
+        "description": "Experimental narratives and artistic visual expressions"
       },
       "cinematicExperiments": {
         "title": "Cinematic Experiments",
-        "description": "Artistic interpretations of traditional stories and modern realities"
+        "description": "Innovative storytelling techniques and visual exploration"
       }
     },
     "cta": {
-      "title": "Explore the Collection",
-      "description": "Discover powerful stories of African innovation and resilience through our curated film collection.",
-      "button": "Visit Cineflix"
+      "button": "View Original Cineflix Collection"
     }
   },
   "gallery": {
     "title": "Nzaaa Gallery",
-    "subtitle": "Artistic Expressions & Cultural Heritage",
-    "description": "A curated collection of visual art that celebrates African heritage, contemporary innovation, and the bridge between traditional and modern expressions.",
-    "categories": {
-      "historical": "Historical Artifacts",
-      "contemporary": "Contemporary Art",
-      "innovation": "Innovation Projects",
-      "exploration": "Exploration Photography"
-    },
-    "artworks": {
-      "kongoWar": {
-        "title": "The Long and Last Kongo War 1517-2025",
-        "description": "A powerful artistic representation of the ongoing struggle for cultural preservation and independence."
-      },
-      "waterLife": {
-        "title": "Water is Life",
-        "description": "Visual documentation of our clean water initiatives and their impact on rural communities."
-      },
-      "innovation": {
-        "title": "Innovation Landscape",
-        "description": "Capturing the spirit of African innovation through abstract and contemporary expressions."
-      },
-      "heritage": {
-        "title": "Cultural Heritage",
-        "description": "Preserving and celebrating the rich cultural traditions of Central Africa."
-      },
-      "exploration": {
-        "title": "Exploration Chronicles",
-        "description": "Visual diary of expeditions across Africa, showcasing hidden gems and untold stories."
-      },
-      "future": {
-        "title": "Future Visions",
-        "description": "Artistic interpretations of Africa's technological and cultural future."
-      }
+    "subtitle": "Untold stories and spiritual awakening through visual art — what is obvious but out of sight for modern man. a glimpse of wisdom of the ages.",
+    "description": "Digitally scanned, signed and printed artwork available for purchase. A3 format: €25 (other formats available upon request). Delivery +7 EUR in Europe. Payment via PayPal (tresor.mac@gmail.com).",
+    "cta": {
+      "description": "Each piece invites viewers to transcend ordinary perception and glimpse the deeper currents of spiritual and cultural truths.",
+      "button": "Explore Full Gallery"
     }
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Let's Collaborate on Something Amazing",
-    "description": "Whether you're interested in collaboration, speaking engagements, or learning more about my work, I'd love to hear from you.",
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "subject": "Subject",
-      "message": "Your Message",
-      "send": "Send Message"
-    },
+    "title": "Get In Touch",
+    "subtitle": "Ready to discuss your next project? Let's connect and explore how we can work together.",
     "info": {
       "title": "Contact Information",
-      "email": "tresor@example.com",
-      "phone": "+243 123 456 789",
-      "location": "Kinshasa, Democratic Republic of Congo"
+      "email": "tresor.mac@gmail.com",
+      "phone": "Phone & WhatsApp",
+      "phoneNumber": "Phone: +49 30 - 98434071",
+      "whatsapp": "WhatsApp: +49 152 04443475",
+      "location": "Locations",
+      "locations": "Berlin-Germany, Kinshasa DRC, Cape Town SA",
+      "remote": "Available worldwide for remote collaboration"
     },
-    "social": {
-      "title": "Follow My Journey",
-      "description": "Stay updated with my latest explorations, publications, and innovations."
+    "form": {
+      "title": "Send a Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Your message...",
+      "send": "Send Message",
+      "sending": "Sending..."
     }
   }
 }
