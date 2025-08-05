@@ -33,15 +33,42 @@ const WaterProject = () => {
               <h3 className="text-xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">Bringing Water to Life</h3>
               <div className="prose prose-gray max-w-none">
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  Responding to the call of ancestors and the urgent need of communities, this project represents a spiritual and practical journey to provide access to clean, drinkable water sources in the KONGO region.
+                  In response to the call of our ancestors and the pressing needs of our people, this project became both a sacred offering and a practical mission: to bring clean, drinkable water to the heart of the KONGO region.
                 </p>
                 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  What began as a simple mission to address water scarcity became a transformative adventure that touched the lives of entire communities, revealing the profound connection between humanity and this sacred element.
+                  What began as a simple act of service grew into a life-altering journey. It reawakened the deep bond between humanity and this elemental force. Water is not just a resource. It is life, memory, healing, and renewal.
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  The project showcases the magical encounter between communities and water sources, demonstrating how access to clean water creates ripples of joy, health, and prosperity throughout African communities.
+                  In the rural community of Bibwa, Kongo-Kinshasa, we witnessed the powerful reunion between people and the sacred source. This project captured that magical moment when clean water emerged from the earth, sparking waves of joy, health, and prosperity throughout the village.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  The vision was born from an ancestral whisper. I followed that echo, and with the strength of the community, we came together, guided by spirit and powered by our hands, to drill over 23 meters into the earth. What emerged was not just water, but hope.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  This journey was both spiritual and physical. It nearly took my life. And yet, it gave life to many.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  This project is only the beginning, a seed planted with love and purpose. My long-term vision is to bring potable water to every community in need. Not just through wells, but through sustainable, eco-conscious systems of tap water, powered by innovation, ancestral wisdom, and collective action.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  Clean water is a birthright. And together, we will reclaim it for all of Africa.
+                </p>
+
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  <a 
+                    href="https://www.goodcrowd.org/water-for-all?fbclid=IwY2xjawL4KqBleHRuA2FlbQIxMABicmlkETBqbTIxb28xNjBBcUpNQjdRAR61i_2qHFokZ6rGrw8iRAdzPaap1Sq8bIPMxtZFg0uwhuz4lu1VIWOO6x48PQ_aem_5p-iEquTNyEUZ9pucIt8Xg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-600 hover:text-cyan-800 underline"
+                  >
+                    Read more about this project →
+                  </a>
                 </p>
               </div>
             </div>
