@@ -57,6 +57,7 @@ const Timeline = () => {
       description: "Integrated MFA authentication security, performed threat modeling and code reviews, enhanced fraud prevention with anomaly detection and secure transaction validation in Cape Town.",
       icon: Shield,
       color: "from-indigo-400 to-purple-500",
+      image: "/lovable-uploads/0d555220-f965-4489-aeb5-2fd0006d8844.png",
     },
     {
       year: "January 2021 - December 2021",
