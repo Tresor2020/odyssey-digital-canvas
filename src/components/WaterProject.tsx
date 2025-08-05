@@ -15,22 +15,40 @@ const WaterProject = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
-          {/* Water Project Image */}
-          <div className="flex justify-center">
+          {/* Water Project Images */}
+          <div className="flex flex-col items-center space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md">
+              <div className="relative group">
+                <img 
+                  src="/lovable-uploads/606ae225-2d1a-48b8-bfb3-32cae82446d6.png" 
+                  alt="Community member celebrating access to clean water in Africa" 
+                  className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="relative group">
+                <img 
+                  src="/lovable-uploads/1206d388-9011-4975-a21a-e29e4465c9b1.png" 
+                  alt="Joy and celebration as clean water flows from the well" 
+                  className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
             <div className="relative group">
               <img 
-                src="/lovable-uploads/606ae225-2d1a-48b8-bfb3-32cae82446d6.png" 
-                alt="Community member celebrating access to clean water in Africa" 
-                className="w-full max-w-md rounded-xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
+                src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
+                alt="Showing the precious water from the community well project" 
+                className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </div>
 
           {/* Project Details */}
           <div className="space-y-4 sm:space-y-6">
             <div>
-              <h3 className="text-xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">Bringing Water to Life</h3>
+              <h3 className="text-xl sm:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">Bring water to all</h3>
               <div className="prose prose-gray max-w-none">
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   In response to the call of our ancestors and the pressing needs of our people, this project became both a sacred offering and a practical mission: to bring clean, drinkable water to the heart of the KONGO region.
