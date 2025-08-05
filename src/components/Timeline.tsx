@@ -49,6 +49,7 @@ const Timeline = () => {
       description: "Completed intensive 1,440-hour cybersecurity program in Berlin. Trained in Splunk, Wireshark, threat intelligence, incident handling, and AI-driven security strategies.",
       icon: Shield,
       color: "from-red-400 to-orange-500",
+      image: "/lovable-uploads/d91b4ddb-6b70-4e31-aef2-f1a777d0f81a.png",
     },
     {
       year: "Nov 2024 - Jan 2025",
