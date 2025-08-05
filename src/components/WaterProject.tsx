@@ -39,9 +39,16 @@ const WaterProject = () => {
               <img 
                 src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
                 alt="Showing the precious water from the community well project" 
-                className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                className="w-40 h-48 sm:w-48 sm:h-56 object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                style={{
+                  borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%'
+                }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{
+                  borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%'
+                }}
+              ></div>
             </div>
           </div>
 
