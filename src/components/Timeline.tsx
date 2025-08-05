@@ -72,6 +72,7 @@ const Timeline = () => {
       description: "Optimized parcel tracking, ensured efficient routing, and coordinated shipments for timely deliveries. Proficient in tracking systems (GPS, RFID) and logistics software including IBP, Oracle Transportation Management (OTM).",
       icon: User,
       color: "from-orange-400 to-red-500",
+      image: "/lovable-uploads/e0eb74dc-baa5-410f-98ad-6859d3e18bf9.png",
     },
     {
       year: "February 2016 - Present",
