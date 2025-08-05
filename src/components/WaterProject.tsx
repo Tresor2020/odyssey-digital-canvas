@@ -23,8 +23,8 @@ const WaterProject = () => {
               <div className="flex">
                 <div className="relative group">
                   <img 
-                    src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
-                    alt="Showing the precious water from the community well project" 
+                    src="/lovable-uploads/8f5b8cbe-c285-4c23-a397-346cb4bb75ce.png" 
+                    alt="Community collecting water" 
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -86,8 +86,8 @@ const WaterProject = () => {
               </div>
               <div className="relative group">
                 <img 
-                  src="/lovable-uploads/8f5b8cbe-c285-4c23-a397-346cb4bb75ce.png" 
-                  alt="Community collecting water" 
+                  src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
+                  alt="Showing the precious water from the community well project" 
                   className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
