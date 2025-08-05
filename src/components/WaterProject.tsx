@@ -16,8 +16,66 @@ const WaterProject = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
           {/* Water Project Images */}
-          <div className="flex flex-col items-center space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md">
+          <div className="flex flex-col items-center space-y-6">
+            {/* Top pyramid - 6 small images */}
+            <div className="flex flex-col items-center space-y-3">
+              {/* Top row - 2 images */}
+              <div className="flex gap-3">
+                <div className="relative group">
+                  <img 
+                    src="/lovable-uploads/8f5b8cbe-c285-4c23-a397-346cb4bb75ce.png" 
+                    alt="Community collecting water" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group">
+                  <img 
+                    src="/lovable-uploads/0eac97b0-a13b-480f-b98a-2400e607cd7e.png" 
+                    alt="Clean water flowing" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+              
+              {/* Middle row - 2 images */}
+              <div className="flex gap-4">
+                <div className="relative group">
+                  <img 
+                    src="/lovable-uploads/22280363-305f-42a2-9051-409e70c61dda.png" 
+                    alt="Community celebration" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group">
+                  <img 
+                    src="/lovable-uploads/5210def7-99b8-4dc8-80bc-1978e0a60a77.png" 
+                    alt="Well usage" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+              
+              {/* Bottom row - 2 images */}
+              <div className="flex gap-3">
+                <div className="relative group">
+                  <img 
+                    src="/lovable-uploads/28869b21-6e40-474b-b45a-9c075a0e516e.png" 
+                    alt="Distribution system" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group">
+                  <img 
+                    src="/lovable-uploads/4c3e69d3-3113-47b8-a76b-8153ba9ea0e9.png" 
+                    alt="Community work" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Bottom - 2 large images */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg">
               <div className="relative group">
                 <img 
                   src="/lovable-uploads/606ae225-2d1a-48b8-bfb3-32cae82446d6.png" 
@@ -26,66 +84,14 @@ const WaterProject = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              
-              {/* New images grid replacing the second image */}
-              <div className="flex flex-col items-center space-y-2">
-                <div className="flex gap-2">
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/8f5b8cbe-c285-4c23-a397-346cb4bb75ce.png" 
-                      alt="Community collecting water" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/0eac97b0-a13b-480f-b98a-2400e607cd7e.png" 
-                      alt="Clean water flowing" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/22280363-305f-42a2-9051-409e70c61dda.png" 
-                      alt="Community celebration" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/5210def7-99b8-4dc8-80bc-1978e0a60a77.png" 
-                      alt="Well usage" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/28869b21-6e40-474b-b45a-9c075a0e516e.png" 
-                      alt="Distribution system" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="relative group">
-                    <img 
-                      src="/lovable-uploads/4c3e69d3-3113-47b8-a76b-8153ba9ea0e9.png" 
-                      alt="Community work" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
+              <div className="relative group">
+                <img 
+                  src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
+                  alt="Showing the precious water from the community well project" 
+                  className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-            </div>
-            <div className="relative group">
-              <img 
-                src="/lovable-uploads/e7534747-cb85-4e40-b59c-b07779ce16cc.png" 
-                alt="Showing the precious water from the community well project" 
-                className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover shadow-xl transform group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </div>
 
