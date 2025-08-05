@@ -17,6 +17,7 @@ const Timeline = () => {
       description: "Earned Bachelor of Arts in Film Science in Cape Town, South Africa. Demonstrated strong storytelling, technical proficiency, and leadership through writing, directing, and editing films and documentaries.",
       icon: School,
       color: "from-blue-400 to-blue-600",
+      image: "/lovable-uploads/32f0c9cc-67b0-41ab-ac26-2065d9a34682.png",
     },
     {
       year: "April 2019",
