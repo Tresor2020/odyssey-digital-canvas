@@ -1,11 +1,8 @@
-import { ShoppingCart, Book as BookIcon, Heart } from "lucide-react";
+import { Book as BookIcon, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useState } from "react";
 
 const Book = () => {
-  const [showPayPal, setShowPayPal] = useState(false);
-
   const paypalOptions = {
     clientId: "AeLcB9N1_rU0rVkIk_y6OjhB8w6y03NLxL5bJXhJ3GiYS09XbqDTaEwQhOV2VG4pCcCdV4zVkuKkgWBr",
     currency: "EUR",
@@ -105,36 +102,23 @@ const Book = () => {
               <div className="flex items-center justify-between mb-4">
                 <div>
                   <span className="text-3xl font-bold text-blue-600">€9.90</span>
-                  <p className="text-sm text-gray-600">Shipping within Germany: €4.50</p>
+                  <p className="text-sm text-gray-600">+ €4.50 Shipping in Germany</p>
+                  <p className="text-lg font-semibold text-gray-800 mt-1">Total: €14.40</p>
                 </div>
                 <Heart className="text-red-500" size={24} />
               </div>
               
               <div className="space-y-3">
-                {!showPayPal ? (
-                  <Button 
-                    className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-                    onClick={() => setShowPayPal(true)}
-                  >
-                    <ShoppingCart size={20} />
-                    Purchase Book with PayPal
-                  </Button>
-                ) : (
-                  <div className="w-full">
-                    <PayPalButtons
-                      createOrder={createOrder}
-                      onApprove={onApprove}
-                      style={{ layout: "vertical" }}
-                    />
-                    <Button 
-                      variant="outline" 
-                      className="w-full mt-2 border-gray-300 text-gray-600 hover:bg-gray-50"
-                      onClick={() => setShowPayPal(false)}
-                    >
-                      Cancel
-                    </Button>
-                  </div>
-                )}
+                <PayPalButtons
+                  createOrder={createOrder}
+                  onApprove={onApprove}
+                  style={{
+                    layout: "vertical",
+                    color: "blue",
+                    shape: "rect",
+                    label: "pay"
+                  }}
+                />
               </div>
             </div>
           </div>
