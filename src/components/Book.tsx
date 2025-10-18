@@ -135,14 +135,6 @@ const Book = () => {
                     </Button>
                   </div>
                 )}
-                
-                <Button 
-                  variant="outline" 
-                  className="w-full border-blue-300 text-blue-600 hover:bg-blue-50"
-                  onClick={() => window.open('https://kinstartuplab.wixsite.com/mysite-2/my-e-book', '_blank')}
-                >
-                  Learn More
-                </Button>
               </div>
             </div>
           </div>
