@@ -1,10 +1,47 @@
-
 import { ShoppingCart, Book as BookIcon, Heart } from "lucide-react";
 import { Button } from "./ui/button";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { useState } from "react";
 
 const Book = () => {
+  const [showPayPal, setShowPayPal] = useState(false);
+
+  const paypalOptions = {
+    clientId: "AeLcB9N1_rU0rVkIk_y6OjhB8w6y03NLxL5bJXhJ3GiYS09XbqDTaEwQhOV2VG4pCcCdV4zVkuKkgWBr",
+    currency: "EUR",
+    intent: "capture",
+  };
+
+  const createOrder = (data: any, actions: any) => {
+    return actions.order.create({
+      purchase_units: [
+        {
+          amount: {
+            value: "14.40",
+            currency_code: "EUR",
+            breakdown: {
+              item_total: { value: "9.90", currency_code: "EUR" },
+              shipping: { value: "4.50", currency_code: "EUR" }
+            }
+          },
+          description: "KONGO Spirit Water - Journey by Tresor Ilunga Mukuna",
+          payee: {
+            email_address: "tresor.mac@gmail.com"
+          }
+        },
+      ],
+    });
+  };
+
+  const onApprove = (data: any, actions: any) => {
+    return actions.order.capture().then((details: any) => {
+      alert(`Transaction completed by ${details.payer.name.given_name}. Book purchase confirmed!`);
+    });
+  };
+
   return (
-    <section id="book" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <PayPalScriptProvider options={paypalOptions}>
+      <section id="book" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
@@ -74,13 +111,30 @@ const Book = () => {
               </div>
               
               <div className="space-y-3">
-                <Button 
-                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-                  onClick={() => window.open('https://kinstartuplab.wixsite.com/mysite-2/my-e-book', '_blank')}
-                >
-                  <ShoppingCart size={20} />
-                  Purchase Book
-                </Button>
+                {!showPayPal ? (
+                  <Button 
+                    className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                    onClick={() => setShowPayPal(true)}
+                  >
+                    <ShoppingCart size={20} />
+                    Purchase Book with PayPal
+                  </Button>
+                ) : (
+                  <div className="w-full">
+                    <PayPalButtons
+                      createOrder={createOrder}
+                      onApprove={onApprove}
+                      style={{ layout: "vertical" }}
+                    />
+                    <Button 
+                      variant="outline" 
+                      className="w-full mt-2 border-gray-300 text-gray-600 hover:bg-gray-50"
+                      onClick={() => setShowPayPal(false)}
+                    >
+                      Cancel
+                    </Button>
+                  </div>
+                )}
                 
                 <Button 
                   variant="outline" 
@@ -95,6 +149,7 @@ const Book = () => {
         </div>
       </div>
     </section>
+    </PayPalScriptProvider>
   );
 };
 
