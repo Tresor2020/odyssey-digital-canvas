@@ -1,17 +1,12 @@
 
 import { ChevronRight, Eye, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const Gallery = () => {
-  const paypalOptions = {
-    clientId: "test", // In production, use your actual PayPal client ID
-    currency: "EUR",
-    intent: "capture",
-  };
 
   return (
-    <PayPalScriptProvider options={paypalOptions}>
+    
       <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -121,7 +116,7 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-    </PayPalScriptProvider>
+    
   );
 };
 
@@ -179,6 +174,10 @@ const ArtworkCard = ({ title, description, imageSrc }: { title: string; descript
           <PayPalButtons
             createOrder={createOrder}
             onApprove={onApprove}
+            onError={(err) => {
+              alert('Payment setup failed. Please try again.');
+              console.error(err);
+            }}
             style={{
               layout: "horizontal",
               color: "blue",
