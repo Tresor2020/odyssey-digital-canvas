@@ -1,10 +1,17 @@
 import { Book as BookIcon, Heart, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
-import { PayPalButtons } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useState } from "react";
 
 const Book = () => {
   const [showPayPal, setShowPayPal] = useState(false);
+  const paypalOptions = {
+    clientId: "AeLcB9N1_rU0rVkIk_y6OjhB8w6y03NLxL5bJXhJ3GiYS09XbqDTaEwQhOV2VG4pCcCdV4zVkuKkgWBr",
+    currency: "EUR",
+    intent: "capture",
+    components: "buttons",
+    "enable-funding": "card,paylater,venmo",
+  };
 
   const createOrder = (data: any, actions: any) => {
     return actions.order.create({
@@ -34,7 +41,7 @@ const Book = () => {
   };
 
   return (
-    
+    <PayPalScriptProvider options={paypalOptions}>
       <section id="book" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -145,7 +152,7 @@ const Book = () => {
         </div>
       </div>
     </section>
-    
+    </PayPalScriptProvider>
   );
 };
 
