@@ -1,18 +1,8 @@
 import { Book as BookIcon, Heart, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useState } from "react";
+import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const Book = () => {
-  const [showPayPal, setShowPayPal] = useState(false);
-  const paypalOptions = {
-    clientId: "AeLcB9N1_rU0rVkIk_y6OjhB8w6y03NLxL5bJXhJ3GiYS09XbqDTaEwQhOV2VG4pCcCdV4zVkuKkgWBr",
-    currency: "EUR",
-    intent: "capture",
-    components: "buttons",
-    "enable-funding": "card,paylater,venmo",
-  };
-
   const createOrder = (data: any, actions: any) => {
     return actions.order.create({
       purchase_units: [
@@ -31,18 +21,21 @@ const Book = () => {
           }
         },
       ],
+      application_context: {
+        shipping_preference: "NO_SHIPPING"
+      }
     });
   };
 
   const onApprove = (data: any, actions: any) => {
     return actions.order.capture().then((details: any) => {
-      alert(`Transaction completed by ${details.payer.name.given_name}. Book purchase confirmed!`);
+      alert(`Transaction completed by ${details.payer.name.given_name}. Book purchase confirmed! Order ID: ${data.orderID}`);
     });
   };
 
+
   return (
-    <PayPalScriptProvider options={paypalOptions}>
-      <section id="book" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <section id="book" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
@@ -113,46 +106,25 @@ const Book = () => {
               </div>
               
               <div className="space-y-3">
-                {!showPayPal ? (
-                  <Button 
-                    className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-                    onClick={() => setShowPayPal(true)}
-                  >
-                    <ShoppingCart size={20} />
-                    Purchase Book
-                  </Button>
-                ) : (
-                  <div className="w-full space-y-2">
-                    <PayPalButtons
-                      createOrder={createOrder}
-                      onApprove={onApprove}
-                      onError={(err) => {
-                        alert('Payment setup failed. Please try again.');
-                        console.error(err);
-                      }}
-                      style={{
-                        layout: "vertical",
-                        color: "blue",
-                        shape: "rect",
-                        label: "pay"
-                      }}
-                    />
-                    <Button 
-                      variant="outline" 
-                      className="w-full"
-                      onClick={() => setShowPayPal(false)}
-                    >
-                      Cancel
-                    </Button>
-                  </div>
-                )}
+                <PayPalButtons
+                  createOrder={createOrder}
+                  onApprove={onApprove}
+                  onError={(err) => {
+                    alert('Payment setup failed. Please try again.');
+                  }}
+                  style={{
+                    layout: "vertical",
+                    color: "blue",
+                    shape: "rect",
+                    label: "pay"
+                  }}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    </PayPalScriptProvider>
   );
 };
 

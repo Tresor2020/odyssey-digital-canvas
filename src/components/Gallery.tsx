@@ -1,18 +1,11 @@
 
 import { ChevronRight, Eye, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const Gallery = () => {
-  const paypalOptions = {
-    clientId: "test", // In production, use your actual PayPal client ID
-    currency: "EUR",
-    intent: "capture",
-  };
-
   return (
-    <PayPalScriptProvider options={paypalOptions}>
-      <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="gallery" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -121,7 +114,6 @@ const Gallery = () => {
           </div>
         </div>
       </section>
-    </PayPalScriptProvider>
   );
 };
 
