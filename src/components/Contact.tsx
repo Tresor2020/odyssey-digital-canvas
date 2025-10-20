@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +5,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  firstName: z.string().trim().min(1, "First name is required").max(50, "First name must be less than 50 characters"),
+  lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name must be less than 50 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+  subject: z.string().trim().min(1, "Subject is required").max(200, "Subject must be less than 200 characters"),
+  message: z.string().trim().min(1, "Message is required").max(5000, "Message must be less than 5000 characters")
+});
 
 const Contact = () => {
   const { toast } = useToast();
@@ -31,12 +39,15 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      // Validate form data with zod
+      const validatedData = contactSchema.parse(formData);
+
       const response = await fetch('/api/send-contact-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(validatedData),
       });
 
       if (response.ok) {
@@ -54,15 +65,25 @@ const Contact = () => {
           message: ''
         });
       } else {
-        throw new Error('Failed to send message');
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
       }
     } catch (error) {
-      console.error('Error sending message:', error);
-      toast({
-        title: "Error sending message",
-        description: "Something went wrong. Please try again or contact me directly.",
-        variant: "destructive",
-      });
+      if (error instanceof z.ZodError) {
+        // Handle validation errors
+        const firstError = error.errors[0];
+        toast({
+          title: "Validation Error",
+          description: firstError.message,
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Error sending message",
+          description: error instanceof Error ? error.message : "Something went wrong. Please try again or contact me directly.",
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -135,6 +156,7 @@ const Contact = () => {
                       placeholder="First Name" 
                       value={formData.firstName}
                       onChange={handleInputChange}
+                      maxLength={50}
                       required
                     />
                   </div>
@@ -144,6 +166,7 @@ const Contact = () => {
                       placeholder="Last Name" 
                       value={formData.lastName}
                       onChange={handleInputChange}
+                      maxLength={50}
                       required
                     />
                   </div>
@@ -154,6 +177,7 @@ const Contact = () => {
                   type="email" 
                   value={formData.email}
                   onChange={handleInputChange}
+                  maxLength={255}
                   required
                 />
                 <Input 
@@ -161,6 +185,7 @@ const Contact = () => {
                   placeholder="Subject" 
                   value={formData.subject}
                   onChange={handleInputChange}
+                  maxLength={200}
                   required
                 />
                 <Textarea 
@@ -169,6 +194,7 @@ const Contact = () => {
                   className="min-h-[120px]"
                   value={formData.message}
                   onChange={handleInputChange}
+                  maxLength={5000}
                   required
                 />
                 <Button type="submit" className="w-full" disabled={isSubmitting}>

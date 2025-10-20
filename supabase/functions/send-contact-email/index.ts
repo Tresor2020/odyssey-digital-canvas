@@ -1,8 +1,28 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts"
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+}
+
+// Validation schema
+const contactSchema = z.object({
+  firstName: z.string().trim().min(1).max(50),
+  lastName: z.string().trim().min(1).max(50),
+  email: z.string().trim().email().max(255),
+  subject: z.string().trim().min(1).max(200),
+  message: z.string().trim().min(1).max(5000)
+})
+
+// HTML sanitization function
+function escapeHtml(unsafe: string): string {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 serve(async (req) => {
@@ -12,30 +32,26 @@ serve(async (req) => {
   }
 
   try {
-    const { firstName, lastName, email, subject, message } = await req.json()
+    const rawData = await req.json()
 
-    // Validate required fields
-    if (!firstName || !lastName || !email || !subject || !message) {
-      return new Response(
-        JSON.stringify({ error: 'All fields are required' }),
-        { 
-          status: 400, 
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-        }
-      )
+    // Validate and sanitize input data
+    let validatedData
+    try {
+      validatedData = contactSchema.parse(rawData)
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return new Response(
+          JSON.stringify({ error: 'Validation failed', details: error.errors }),
+          { 
+            status: 400, 
+            headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+          }
+        )
+      }
+      throw error
     }
 
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
-      return new Response(
-        JSON.stringify({ error: 'Invalid email format' }),
-        { 
-          status: 400, 
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-        }
-      )
-    }
+    const { firstName, lastName, email, subject, message } = validatedData
 
     // Get RESEND API key from Supabase secrets
     const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
@@ -60,14 +76,14 @@ serve(async (req) => {
       body: JSON.stringify({
         from: 'contact@yourdomain.com', // You'll need to verify this domain with Resend
         to: ['tresor.mac@gmail.com'],
-        subject: `Contact Form: ${subject}`,
+        subject: `Contact Form: ${escapeHtml(subject)}`,
         html: `
           <h2>New Contact Form Submission</h2>
-          <p><strong>From:</strong> ${firstName} ${lastName}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
+          <p><strong>From:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
+          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+          <p><strong>Subject:</strong> ${escapeHtml(subject)}</p>
           <p><strong>Message:</strong></p>
-          <p>${message.replace(/\n/g, '<br>')}</p>
+          <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
           <hr>
           <p><em>This message was sent from your portfolio contact form.</em></p>
         `,
