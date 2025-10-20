@@ -9,6 +9,8 @@ const Book = () => {
     clientId: "AeLcB9N1_rU0rVkIk_y6OjhB8w6y03NLxL5bJXhJ3GiYS09XbqDTaEwQhOV2VG4pCcCdV4zVkuKkgWBr",
     currency: "EUR",
     intent: "capture",
+    components: "buttons",
+    "enable-funding": "card,paylater,venmo",
   };
 
   const createOrder = (data: any, actions: any) => {
@@ -124,6 +126,10 @@ const Book = () => {
                     <PayPalButtons
                       createOrder={createOrder}
                       onApprove={onApprove}
+                      onError={(err) => {
+                        alert('Payment setup failed. Please try again.');
+                        console.error(err);
+                      }}
                       style={{
                         layout: "vertical",
                         color: "blue",
