@@ -7,8 +7,18 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <div className="animate-fade-in">
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
-            <TranslatedText>Rooted in technology from an early age through high school studies in signal systems, automation, and binary logic, I later transitioned into film, producing award-winning documentaries after earning a Bachelor of Arts from CPUT. Today, I combine creative and analytical thinking as a cybersecurity analyst and virtual Chief Information Security Officer, while also exploring ancient wisdom through Nzaaa Painting, my expression in visual art.</TranslatedText>
+            <TranslatedText>A Decade of</TranslatedText>
+            <span className="block">
+              <TranslatedText>Innovation & Adventure</TranslatedText>
+            </span>
           </h1>
+          
+          <TranslatedText 
+            as="p" 
+            className="text-sm sm:text-xl md:text-2xl text-gray-600 mb-4 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
+          >
+            Rooted in technology from an early age through high school studies in signal systems, automation, and binary logic, I later transitioned into film, producing award-winning documentaries after earning a Bachelor of Arts from CPUT. Today, I combine creative and analytical thinking as a cybersecurity analyst and virtual Chief Information Security Officer, while also exploring ancient wisdom through Nzaaa Painting, my expression in visual art.
+          </TranslatedText>
           
           <TranslatedText 
             as="p" 
@@ -16,6 +26,7 @@ const Hero = () => {
           >
             Exploring, creating, securing — always evolving.
           </TranslatedText>
+          
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
