@@ -17,7 +17,7 @@ const Hero = () => {
             as="p" 
             className="text-sm sm:text-xl md:text-2xl text-gray-600 mb-4 sm:mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Rooted in technology from an early age through high school studies in signal systems, electronics, automation, and binary logic, I later transitioned into film—producing award-winning documentaries after earning my Bachelor's degree in Film Science from CPUT. Today, I merge creative vision with analytical precision as a Cybersecurity Analyst and Virtual Chief Information Security Officer, while also exploring ancient wisdom through Nzaaa Painting, my expression in visual art.
+            Rooted in technology from an early age through high school studies in signal systems, automation, and binary logic, I later transitioned into film, producing award-winning documentaries after earning a Bachelor of Arts from CPUT. Today, I combine creative and analytical thinking as a cybersecurity analyst and virtual Chief Information Security Officer, while also exploring ancient wisdom through Nzaaa Painting, my expression in visual art.
           </TranslatedText>
           
           <TranslatedText 
